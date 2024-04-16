@@ -12,7 +12,7 @@ async function getAllFavoris() {
   return await knex.select().from('favoris');
 }
 
-async function getBoisonById(favorisId) {
+async function getFavorisById(favorisId) {
   return await knex('favoris').where({ favorisId }).first();
 }
 
@@ -29,7 +29,7 @@ async function deleteFavoris(favorisId) {
 module.exports = {
   createFavoris,
   getAllFavoris,
-  getBoisonById,
+  getFavorisById,
   updateFavoris,
   deleteFavoris
 };
