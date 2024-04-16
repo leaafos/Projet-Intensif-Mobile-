@@ -1,20 +1,18 @@
 import React from 'react';
-import './styles/App.css';
+import 'index.css';
+import './pages/HomePage';
+import './pages/Favoris';
+import './pages/Produit';
+import './pages/ListeAnnonces';
+import './pages/Profil';
+import './pages/Messagerie';
+import './pages/Swipe';
 
-//Ici c'est notre home page 
+//on va importer des choses des pages : en gros import machin machin from la page
+//là on va mettre les routes 
 
-//là on va mettre un bouton pour aller sur une autre page 
-//une page produit avec un bouton 
-//Le bouton il va vers les annonces 
+const App = () => {
+    //du blabla
+}
 
-
-
-/*
-Toutes les pages : 
-Home page 
-Page produit 
-Page annonce 
-Page liste annonces 
-Page profil 
-Page messagerie 
-*/
+export default App
