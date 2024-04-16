@@ -1,7 +1,17 @@
 import React from 'react';
-import '../styles/homePage.css';
+
 
 //Ici c'est notre home page 
+
+
+export default function HomePage  () {
+    return (
+    <div>
+        <h1>Hellooo </h1>
+    </div>
+    )
+}
+
 
 
 /*
