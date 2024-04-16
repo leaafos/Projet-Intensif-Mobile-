@@ -115,6 +115,7 @@ async function createTable() {
         table.integer('userId');
         table.integer('productId');
         table.integer('date');
+        table.integer('annonceId');
       });
       console.log('La table "favoris" a été créée avec succès.');
     } else {
