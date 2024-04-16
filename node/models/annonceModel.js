@@ -17,7 +17,7 @@ async function getAnnoncesById(annoncesId) {
 }
 
 // Update
-async function updateAnnonces(annoncesId, productsId, price, lien,vendeurId) {
+async function updateAnnonces(annoncesId, productsId, price) {
   return await knex('annonces').where({annoncesId}).update({annoncesId, productsId, price,});
 }
 
