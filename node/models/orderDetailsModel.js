@@ -3,35 +3,30 @@
 const knex = require('knex')(require('./knexfile')['development']);
 
 // Create
-async function createBoisson(name, quantity, price) {
-  return await knex('boissons').insert({ name, quantity, price });
+async function createOrderDetail(orderDetailsId, ordersId, annoncesId, quantite, paiementType, total) {
+  return await knex('orderDetails').insert({ orderDetailsId, ordersId, annoncesId, quantite, paiementType, total });
 }
 
 // Read
-async function getAllBoissons() {
-  return await knex.select().from('boissons');
+async function getAllOrderDetails() {
+  return await knex.select().from('orderDetails');
 }
 
-async function getBoisonById(id) {
-  return await knex('boissons').where({ id }).first();
+async function getOrderDetailById(orderDetailsId) {
+  return await knex('orderDetails').where({ orderDetailsId }).first();
 }
 
-// Update
-async function updateBoisson(id, quantity) {
-  return await knex('boissons').where({ id }).update({ quantity });
-}
 
 // Delete
-async function deletBoisson(id) {
-  return await knex('boissons').where({ id }).del();
+async function deleteOrderDetail(orderDetailsId) {
+  return await knex('orderDetails').where({ orderDetailsId }).del();
 }
 
 module.exports = {
-  createBoisson,
-  getAllBoissons,
-  getBoisonById,
-  updateBoisson,
-  deletBoisson
+  createOrderDetail,
+  getAllOrderDetails,
+  getOrderDetailById,
+  deleteOrderDetail
 };
 
 // npm install knex sqlite3
