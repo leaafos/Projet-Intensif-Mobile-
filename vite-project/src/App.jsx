@@ -1,7 +1,8 @@
 
 
 import HomePage from './pages/HomePage';
-import './App.css'
+import './App.css';
+
 
 //Tout s'affiche ici 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     
       <p>coucou</p>
       <p>coucou</p>
+      
 
 
     
