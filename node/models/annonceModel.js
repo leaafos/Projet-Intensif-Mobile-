@@ -18,7 +18,7 @@ async function getAnnoncesById(annoncesId) {
 
 // Update
 async function updateAnnonces(annoncesId, productsId, price, lien,vendeurId) {
-  return await knex('annonces').where({annoncesId}).update({annoncesId, productsId, price, lien,vendeurId});
+  return await knex('annonces').where({annoncesId}).update({annoncesId, productsId, price,});
 }
 
 // Delete
