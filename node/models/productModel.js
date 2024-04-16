@@ -3,35 +3,35 @@
 const knex = require('knex')(require('./knexfile')['development']);
 
 // Create
-async function createBoisson(name, quantity, price) {
-  return await knex('boissons').insert({ name, quantity, price });
+async function createproducts(productsId, name, description, categories, namePlateforme, commentairesId, taille,image,priceConseille ) {
+  return await knex('products').insert({productsId, name, description, categories, namePlateforme, commentairesId, taille,image,priceConseille });
 }
 
 // Read
-async function getAllBoissons() {
-  return await knex.select().from('boissons');
+async function getAllproducts() {
+  return await knex.select().from('products');
 }
 
-async function getBoisonById(id) {
-  return await knex('boissons').where({ id }).first();
+async function getproductsById(productsId) {
+  return await knex('products').where({ productsId }).first();
 }
 
 // Update
-async function updateBoisson(id, quantity) {
-  return await knex('boissons').where({ id }).update({ quantity });
+async function updateproducts(productsId, name, description, categories, taille,image,priceConseille) {
+  return await knex('products').where({productsId}).update({productsId, name, description, categories, taille,image,priceConseille});
 }
 
 // Delete
-async function deletBoisson(id) {
-  return await knex('boissons').where({ id }).del();
+async function deleteproducts(productsId) {
+  return await knex('products').where({ productsId }).del();
 }
 
 module.exports = {
-  createBoisson,
-  getAllBoissons,
-  getBoisonById,
-  updateBoisson,
-  deletBoisson
+  createproducts,
+  getAllproducts,
+  getproductsById,
+  updateproducts,
+  deleteproducts
 };
 
 // npm install knex sqlite3
