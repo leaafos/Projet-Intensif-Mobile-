@@ -6,16 +6,20 @@ import '../styles/homePage.css';
 
 /*
 Toutes les pages : 
-Home page 
-Page produit 
+Home page ---- afficher des trucs 
+Page produit ---- afficher des trucs 
 
-Page liste annonces 
-Page profil 
+Page liste annonces ---- afficher des trucs 
+Page profil ---- afficher des trucs 
 
-Page messagerie 
-Page favoris 
+Page messagerie --- un peu différent 
+Page favoris ---- afficher des trucs 
 
-Swipe 
+Page se connecter/s'inscrire 
+Page inscritpion 
+
+
+Swipe ---- un peu différent 
 
 Autres : 
 Alertes c'est un pop 

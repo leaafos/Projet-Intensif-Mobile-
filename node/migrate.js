@@ -114,6 +114,7 @@ async function createTable() {
         table.increments('id').primary();
         table.integer('usersId');
         table.integer('productsId');
+        table.integer('collectionsId')
         table.integer('date');
         table.integer('annoncesId');
       });
@@ -226,6 +227,16 @@ async function createTable() {
       console.log('La table "vendeurs" a été créée avec succès.');
     } else {
       console.log('La table "vendeurs" existe déjà.');
+    }
+    exists = await knex.schema.hasTable('collections');
+    if (!exists) {
+      await knex.schema.createTable('collections', table => {
+        table.increments('id').primary();
+        table.string('name');
+      });
+      console.log('La table "collections" a été créée avec succès.');
+    } else {
+      console.log('La table "collections" existe déjà.');
     }
   } catch (error) {
     console.error('Erreur lors de la création de la table :', error);

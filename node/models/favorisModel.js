@@ -3,8 +3,8 @@
 const knex = require('knex')(require('./knexfile')['development']);
 
 // Create
-async function createFavoris(favorisId, userId, productId, annonceId, date) {
-  return await knex('favoris').insert({ favorisId, userId, productId, annonceId, date });
+async function createFavoris(favorisId, userId, productId, collectionsId, annonceId, date) {
+  return await knex('favoris').insert({ favorisId, userId, productId, collectionsId, annonceId, date });
 }
 
 // Read
@@ -17,8 +17,8 @@ async function getFavorisById(favorisId) {
 }
 
 // Update
-async function updateFavoris(productId, annonceId) {
-  return await knex('favoris').where({ favorisId }).update({ productId, annonceId });
+async function updateFavoris(productId,collectionsId, annonceId) {
+  return await knex('favoris').where({ favorisId }).update({ productId, collectionsId, annonceId });
 }
 
 // Delete
