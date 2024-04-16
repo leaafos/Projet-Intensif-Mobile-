@@ -6,8 +6,8 @@ async function createTable() {
     if (!exists) {
       await knex.schema.createTable('poubelles', table => {
         table.increments('id').primary();
-        table.integer('userId');
-        table.integer('productId');
+        table.integer('usersId');
+        table.integer('productsId');
         table.integer('date');
       });
       console.log('La table "poubelles" a été créée avec succès.');
@@ -18,7 +18,7 @@ async function createTable() {
     if (!exists) {
       await knex.schema.createTable('notifications', table => {
         table.increments('id').primary();
-        table.integer('productId');
+        table.integer('productsId');
         table.integer('date');
         table.integer('heure');
         table.string('contenu');
@@ -31,8 +31,8 @@ async function createTable() {
     if (!exists) {
       await knex.schema.createTable('historiques', table => {
         table.increments('id').primary();
-        table.integer('productId');
-        table.integer('userId');
+        table.integer('productsId');
+        table.integer('usersId');
         table.integer('heure');
         table.integer('date');
       });
@@ -46,9 +46,9 @@ async function createTable() {
         table.increments('id').primary();
         table.string('name');
         table.string('description');
-        table.string('categoryId');
+        table.string('categoriesId');
         table.string('nomPlateforme');
-        table.string('commentaireId');
+        table.string('commentairesId');
         table.string('taille');
         table.string('image'); 
         table.integer('priceConseille');
@@ -61,8 +61,8 @@ async function createTable() {
     if (!exists) {
       await knex.schema.createTable('alertes', table => {
         table.increments('id').primary();
-        table.integer('userId');
-        table.integer('productId');
+        table.integer('usersId');
+        table.integer('productsId');
         table.integer('price');
         table.integer('date');
         table.boolean('status');
@@ -87,8 +87,8 @@ async function createTable() {
       await knex.schema.createTable('annonces', table => {
         table.increments('id').primary();
         table.integer('price');
-        table.integer('vendeurId');
-        table.integer('productId');
+        table.integer('vendeursId');
+        table.integer('productsId');
         table.integer('date');
         table.string('lien');
       });
@@ -100,7 +100,7 @@ async function createTable() {
     if (!exists) {
       await knex.schema.createTable('logs', table => {
         table.increments('id').primary();
-        table.integer('userId');
+        table.integer('usersId');
         table.integer('heure');
         table.integer('date');
       });
@@ -112,10 +112,10 @@ async function createTable() {
     if (!exists) {
       await knex.schema.createTable('favoris', table => {
         table.increments('id').primary();
-        table.integer('userId');
-        table.integer('productId');
+        table.integer('usersId');
+        table.integer('productsId');
         table.integer('date');
-        table.integer('annonceId');
+        table.integer('annoncesId');
       });
       console.log('La table "favoris" a été créée avec succès.');
     } else {
@@ -147,8 +147,8 @@ async function createTable() {
     if (!exists) {
       await knex.schema.createTable('messages', table => {
         table.increments('id').primary();
-        table.integer('vendeurId');
-        table.integer('userId');
+        table.integer('vendeursId');
+        table.integer('usersId');
         table.string('message');
         table.boolean('status');
         table.integer('date');
@@ -162,9 +162,8 @@ async function createTable() {
     if (!exists) {
       await knex.schema.createTable('orderDetails', table => {
         table.increments('id').primary();
-        table.integer('orderId');
-        table.integer('paiementId');
-        table.integer('annonceId');
+        table.integer('ordersId');
+        table.integer('annoncesId');
         table.boolean('paiementType');
         table.integer('quantite');
         table.integer('total');
@@ -177,8 +176,8 @@ async function createTable() {
     if (!exists) {
       await knex.schema.createTable('order', table => {
         table.increments('id').primary();
-        table.integer('userId');
-        table.integer('vendeurId');
+        table.integer('usersId');
+        table.integer('vendeursId');
         table.integer('date');
         table.boolean('status');
       });
@@ -190,8 +189,8 @@ async function createTable() {
     if (!exists) {
       await knex.schema.createTable('order', table => {
         table.increments('id').primary();
-        table.integer('userId');
-        table.integer('vendeurId');
+        table.integer('usersId');
+        table.integer('vendeursId');
         table.integer('date');
         table.boolean('status');
       });
@@ -203,8 +202,8 @@ async function createTable() {
     if (!exists) {
       await knex.schema.createTable('commentaires', table => {
         table.increments('id').primary();
-        table.integer('userId');
-        table.integer('productId');
+        table.integer('usersId');
+        table.integer('productsId');
         table.string('commentaire');
         table.integer('note');
       });
@@ -216,10 +215,10 @@ async function createTable() {
     if (!exists) {
       await knex.schema.createTable('vendeurs', table => {
         table.increments('id').primary();
-        table.integer('userId');
-        table.integer('annonceId');
+        table.integer('usersId');
+        table.integer('annoncesId');
         table.string('name');
-        table.integer('commentaireId');
+        table.integer('commentairesId');
         table.string('description');
         table.string('lien');
         table.string('pays');
