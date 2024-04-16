@@ -166,7 +166,7 @@ async function createTable() {
         table.integer('paiementId');
         table.integer('annonceId');
         table.boolean('paiementType');
-        table.integer('quantité');
+        table.integer('quantite');
         table.integer('total');
       });
       console.log('La table "orderDetails" a été créée avec succès.');

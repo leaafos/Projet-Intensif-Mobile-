@@ -3,8 +3,8 @@
 const knex = require('knex')(require('./knexfile')['development']);
 
 // Create
-async function createUser(userId, pseudo, email, telephone, motDePasse, adresse, ville, codePostal, pays, dateInscription, langue, status, dateNaissance, photo) {
-  return await knex('users').insert({userId, pseudo, email, telephone, motDePasse, adresse, ville, codePostal, pays, dateInscription, langue, status, dateNaissance, photo });
+async function createUser(usersId, pseudo, email, telephone, motDePasse, adresse, ville, codePostal, pays, dateInscription, langue, status, dateNaissance, photo) {
+  return await knex('users').insert({usersId, pseudo, email, telephone, motDePasse, adresse, ville, codePostal, pays, dateInscription, langue, status, dateNaissance, photo });
 }
 
 // Read
