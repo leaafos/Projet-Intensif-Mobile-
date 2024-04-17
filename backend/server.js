@@ -18,6 +18,20 @@ app.get("/", (req, res) => {
 });
 
 app.use(require("./routes/security"));
+const genericRouter = require('./routes/generique');
+app.use(genericRouter(require('./models/productModel')));
+app.use(genericRouter(require('./models/productModel')));
+app.use(genericRouter(require('./models/productModel')));
+app.use(genericRouter(require('./models/productModel')));
+app.use(genericRouter(require('./models/productModel')));
+app.use(genericRouter(require('./models/productModel')));
+app.use(genericRouter(require('./models/productModel')));
+app.use(genericRouter(require('./models/productModel')));
+app.use(genericRouter(require('./models/productModel')));
+app.use(genericRouter(require('./models/productModel')));
+app.use(genericRouter(require('./models/productModel')));
+app.use(genericRouter(require('./models/productModel')));
+
 
 
 app.listen(3000, () => {

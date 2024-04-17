@@ -1,4 +1,5 @@
 // db.js - Fichier pour gérer les opérations CRUD avec Knex
+//pas de création - get all 
 
 const knex = require('knex')(require('./knexfile')['development']);
 

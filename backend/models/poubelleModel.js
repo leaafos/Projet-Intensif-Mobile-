@@ -22,10 +22,11 @@ async function deletePoubelle(poubellesid) {
 }
 
 module.exports = {
-  createPoubelle,
-  getAllPoubelles,
-  getPoubelleById,
-  deletePoubelle
+  create : createPoubelle,
+  getAll: getAllPoubelles,
+  get: getPoubelleById,
+  delete: deletePoubelle,
+  routePrefix: 'poubelles'
 };
 
 // npm install knex sqlite3
