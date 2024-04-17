@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 //Ici c'est notre home page 
@@ -8,6 +9,10 @@ export default function HomePage  () {
     return (
     <div>
         <h1>Hellooo </h1>
+        <p>Bienvenue dans la page d'accueil !</p>
+        <Link to="/produit">
+            <button>Voir la page produit </button>
+        </Link>
     </div>
     )
 }
