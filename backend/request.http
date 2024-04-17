@@ -1,4 +1,4 @@
-GET http://localhost:3000/articles
+GET http://localhost:3000/products
 
 ### Create an article
 POST http://localhost:3000/articles

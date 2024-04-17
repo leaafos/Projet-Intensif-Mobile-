@@ -1,6 +1,6 @@
 // db.js - Fichier pour gérer les opérations CRUD avec Knex
 
-const knex = require('knex')(require('./knexfile')['development']);
+const knex = require('../db');
 
 // Create
 async function createFavoris(favorisId, userId, productId, collectionsId, annonceId, date) {
@@ -27,11 +27,12 @@ async function deleteFavoris(favorisId) {
 }
 
 module.exports = {
-  createFavoris,
-  getAllFavoris,
-  getFavorisById,
-  updateFavoris,
-  deleteFavoris
+  create : createFavoris,
+  getAll: getAllFavoris,
+  get: getFavorisById,
+  update : updateFavoris,
+  delete: deleteFavoris,
+  routePrefix: 'favoris'
 };
 
 // npm install knex sqlite3

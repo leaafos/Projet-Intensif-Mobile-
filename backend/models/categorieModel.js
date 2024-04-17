@@ -1,6 +1,6 @@
 // db.js - Fichier pour gérer les opérations CRUD avec Knex
 
-const knex = require('knex')(require('./knexfile')['development']);
+const knex = require('../db');
 
 // Create
 async function createCategories(categoriesId, name, description) {
@@ -27,11 +27,12 @@ async function deleteCategories(categoriesId) {
 }
 
 module.exports = {
-  createCategories,
-  getAllCategories,
-  getCategoriesById,
-  updateCategories,
-  deleteCategories
+  create : createCategories,
+  getAll: getAllCategories,
+  get: getCategoriesById,
+  update : updateCategories,
+  delete: deleteCategories,
+  routePrefix: 'categories'
 };
 
 
