@@ -1,3 +1,4 @@
+
 const express = require("express");
 
 const app = express();
@@ -45,5 +46,3 @@ app.listen(3000, () => {
 
 
 
-// scripts start node server.js name server version 1.0.0
-//express ne fait que du routing mais on peut lui mettre des logiques metiers middle where ???
