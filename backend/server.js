@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 
 app.use(require("./routes/security"));
 const genericRouter = require('./routes/generique');
-app.use(genericRouter(require('./models/productModel')));
+app.use(genericRouter(require('./models/produitModel')));
 app.use(genericRouter(require('./models/alerteModel')));
 app.use(genericRouter(require('./models/annonceModel')));
 app.use(genericRouter(require('./models/categorieModel')));
