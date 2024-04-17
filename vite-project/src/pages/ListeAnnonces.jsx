@@ -6,6 +6,9 @@ export default function Annonces() {
         <div>
             <h1>Page Annonces</h1>
             <p>Bienvenue dans la page annonces !</p>
+            <Link to="/">
+                <button>Retour au menu </button>
+            </Link>
         </div>
     )
 }

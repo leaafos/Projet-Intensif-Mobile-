@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/homepage.css'
 
 
 //Ici c'est notre home page 
@@ -7,8 +8,8 @@ import { Link } from 'react-router-dom';
 
 export default function HomePage  () {
     return (
-    <div>
-        <h1>Hellooo </h1>
+    <div className="homepage">
+        <h1>Accueil </h1>
         <p>Bienvenue dans la page d'accueil !</p>
         <Link to="/produit">
             <button>Voir la page produit </button>
