@@ -1,7 +1,7 @@
 const express = require("express");
 
 const app = express();
-const users = require('./Models/userModel');
+const users = require('./Models/userModel.js');
 
 
 
@@ -34,7 +34,7 @@ app.use(genericRouter(require('./models/notificationModel')));
 app.use(genericRouter(require('./models/orderDetailsModel')));
 app.use(genericRouter(require('./models/orderModel')));
 app.use(genericRouter(require('./models/poubelleModel')));
-app.use(genericRouter(require('./models/userModel')));
+//app.use(genericRouter(require('./models/userModel')));
 app.use(genericRouter(require('./models/vendeurModel')));
 
 

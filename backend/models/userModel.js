@@ -30,6 +30,7 @@ module.exports = {
   create : createUser,
   getAll: getAllUsers,
   get: getUserById,
+  getUserById, 
   update : updateUser,
   delete: deleteUser,
   routePrefix: 'users'

@@ -6,8 +6,15 @@ Content-Type: application/json
 Authorization: 1
 
 {
-    "title": "Produit 1",
-    "content": "This is the content of jeu 1"
+    "produitsId": 1,
+    "name": "NeuroNet",
+    "description": "",
+    "categories": "",
+    "nomPlateforme" : "PC",
+    "commentairesId" : "",
+    "taille": "12.4G",
+    "image": "",
+    "priceConseille": "17.99€"
 }
 
 ### Update an article
@@ -19,7 +26,7 @@ Content-Type: application/json
 }
 
 ### Delete an article
-DELETE http://localhost:3000/articles/4
+DELETE http://localhost:3000/produits/4
 
 ### Register
 POST http://localhost:3000/register
