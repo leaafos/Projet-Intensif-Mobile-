@@ -1,3 +1,51 @@
+<<<<<<< HEAD
+GET http://localhost:3000/products
+
+### Create an article
+POST http://localhost:3000/produits
+Content-Type: application/json
+Authorization: 1
+
+{
+    "produitsId": 1,
+    "name": "NeuroNet",
+    "description": "",
+    "categories": "",
+    "nomPlateforme" : "PC",
+    "commentairesId" : "",
+    "taille": "12.4G",
+    "image": "",
+    "priceConseille": "17.99€"
+}
+
+### Update an article
+PUT http://localhost:3000/produits/1
+Content-Type: application/json
+
+{
+    "title": "Produit 3"
+}
+
+### Delete an article
+DELETE http://localhost:3000/produits/4
+
+### Register
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "username": "user3",
+    "password": "password1"
+}
+
+### Login
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "user2",
+    "password": "password1"
+=======
 GET http://localhost:3000/products
 
 ### Create an article
@@ -37,4 +85,5 @@ Content-Type: application/json
 {
     "username": "user2",
     "password": "password1"
+>>>>>>> 812069cd3d45a52c57de157e4632e873900c8137
 }

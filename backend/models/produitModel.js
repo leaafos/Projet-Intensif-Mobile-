@@ -17,8 +17,8 @@ async function getProduitById(produitsId) {
 }
 
 // Update
-async function updateProduit(produitsId, name, description, categories, taille,image,priceConseille) {
-  return await knex('produits').where({produitsId}).update({produitsId, name, description, categories, taille,image,priceConseille});
+async function updateProduit(produitsId, name, description, categoriesId, nomPlateforme, commentairesId, taille, image, priceConseille) {
+  return await knex('produits').where({produitsId}).update({produitsId, name, description, categoriesId, nomPlateforme, commentairesId, taille,image,priceConseille});
 }
 
 // Delete
