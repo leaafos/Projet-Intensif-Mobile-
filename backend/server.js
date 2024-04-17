@@ -1,7 +1,7 @@
 const express = require("express");
 
 const app = express();
-const users = require('./Models/userModel.js');
+//const users = require('./Models/userModel.js');
 
 
 
@@ -19,23 +19,23 @@ app.get("/", (req, res) => {
   res.send("Hello World");
 });
 
-app.use(require("./routes/security"));
-const genericRouter = require('./routes/generique');
-app.use(genericRouter(require('./models/produitModel')));
-app.use(genericRouter(require('./models/alerteModel')));
-app.use(genericRouter(require('./models/annonceModel')));
-app.use(genericRouter(require('./models/categorieModel')));
-app.use(genericRouter(require('./models/collectionModel')));
-app.use(genericRouter(require('./models/favorisModel')));
-app.use(genericRouter(require('./models/historiqueModel')));
-app.use(genericRouter(require('./models/logModel')));
-app.use(genericRouter(require('./models/messageModel')));
-app.use(genericRouter(require('./models/notificationModel')));
-app.use(genericRouter(require('./models/orderDetailsModel')));
-app.use(genericRouter(require('./models/orderModel')));
-app.use(genericRouter(require('./models/poubelleModel')));
-//app.use(genericRouter(require('./models/userModel')));
-app.use(genericRouter(require('./models/vendeurModel')));
+app.use(require("./routes/security.js"));
+const genericRouter = require('./routes/generique.js');
+app.use(genericRouter(require('./models/produitModel.js')));
+app.use(genericRouter(require('./models/alerteModel.js')));
+app.use(genericRouter(require('./models/annonceModel.js')));
+app.use(genericRouter(require('./models/categorieModel.js')));
+app.use(genericRouter(require('./models/collectionModel.js')));
+app.use(genericRouter(require('./models/favorisModel.js')));
+app.use(genericRouter(require('./models/historiqueModel.js')));
+app.use(genericRouter(require('./models/logModel.js')));
+app.use(genericRouter(require('./models/messageModel.js')));
+app.use(genericRouter(require('./models/notificationModel.js')));
+app.use(genericRouter(require('./models/orderDetailsModel.js')));
+app.use(genericRouter(require('./models/orderModel.js')));
+app.use(genericRouter(require('./models/poubelleModel.js')));
+app.use(genericRouter(require('./models/userModel')));
+app.use(genericRouter(require('./models/vendeurModel.js')));
 
 
 app.listen(3000, () => {
