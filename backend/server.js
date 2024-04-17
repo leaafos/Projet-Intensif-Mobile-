@@ -20,7 +20,20 @@ app.get("/", (req, res) => {
 app.use(require("./routes/security"));
 const genericRouter = require('./routes/generique');
 app.use(genericRouter(require('./models/productModel')));
-
+app.use(genericRouter(require('./models/alerteModel')));
+app.use(genericRouter(require('./models/annonceModel')));
+app.use(genericRouter(require('./models/categorieModel')));
+app.use(genericRouter(require('./models/collectionModel')));
+app.use(genericRouter(require('./models/favorisModel')));
+app.use(genericRouter(require('./models/historiqueModel')));
+app.use(genericRouter(require('./models/logModel')));
+app.use(genericRouter(require('./models/messageModel')));
+app.use(genericRouter(require('./models/notificationModel')));
+app.use(genericRouter(require('./models/orderDetailsModel')));
+app.use(genericRouter(require('./models/orderModel')));
+app.use(genericRouter(require('./models/poubelleModel')));
+app.use(genericRouter(require('./models/userModel')));
+app.use(genericRouter(require('./models/vendeurModel')));
 
 
 app.listen(3000, () => {

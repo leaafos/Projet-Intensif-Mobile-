@@ -31,7 +31,7 @@ module.exports = {
   getAll: getAllproducts,
   get: getproductsById,
   delete: deleteproducts,
-  updateproducts,
+  update: updateproducts,
   routePrefix: 'products'
 };
 

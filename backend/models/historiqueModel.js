@@ -1,7 +1,7 @@
 // db.js - Fichier pour gérer les opérations CRUD avec Knex
 //pas de création - get all 
 
-const knex = require('knex')(require('./knexfile')['development']);
+const knex = require('../db');
 
 // Create
 async function createHistoriques(hisotriquesId, usersId, productsId, date, heure) {
@@ -28,11 +28,12 @@ async function deleteHistoriques(historiquesId) {
 }
 
 module.exports = {
-  createHistoriques,
-  getAllHistoriques,
-  getHistoriquesById,
-  updateHistoriques,
-  deleteHistoriques
+  create : createHistoriques,
+  getAll: getAllHistoriques,
+  get: getAllHistoriques,
+  update : updateHistoriques,
+  delete: deleteHistoriques,
+  routePrefix: 'historiques'
 };
 
 // npm install knex sqlite3
