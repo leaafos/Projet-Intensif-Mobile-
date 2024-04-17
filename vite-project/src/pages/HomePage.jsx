@@ -14,6 +14,15 @@ export default function HomePage  () {
         <Link to="/produit">
             <button>Voir la page produit </button>
         </Link>
+        <Link to="/produit">
+            <button>Voir la page favoris </button>
+        </Link>
+        <Link to="/produit">
+            <button>Voir la page profil </button>
+        </Link>
+        <Link to="/produit">
+            <button>Voir la page swipe </button>
+        </Link>
     </div>
     )
 }
