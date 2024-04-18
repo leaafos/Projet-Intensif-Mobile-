@@ -1,0 +1,102 @@
+.burger-menu {
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    height: 100%;
+    background-color: #171D25;
+    transition: left 0.3s ease-in-out;
+}
+
+.burger-menu-open {
+    left: 0;
+}
+
+.menu-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+
+.menu-button.open .bar:first-child {
+    transform: rotate(45deg) translate(5px, 6px); /* Transformation pour la première barre */
+}
+
+.menu-button.open .bar:nth-child(2) {
+    opacity: 0; /* Masque la deuxième barre */
+  }
+
+.menu-button.open .bar:last-child {
+    transform: rotate(-45deg) translate(5px, -6px); /* Transformation pour la dernière barre */
+}
+
+.menu-content {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column; 
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.menu-content .bouton-playstation {
+    border-radius: 0px;
+    height: 70px;
+    background-image: url('../assets/Playstation.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #171D25;
+}
+
+.menu-content .bouton-playstation {
+    border-radius: 0px;
+    width: 100%;
+    height: 70px;
+    background-image: url('../assets/Playstation.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #171D25;
+}
+
+.menu-content .bouton-nintendo {
+    border-radius: 0px;
+    width: 100%;
+    height: 70px;
+    background-image: url('../assets/Nintendo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #171D25;
+}
+
+.menu-content .bouton-pc {
+    border-radius: 0px;
+    width: 100%;
+    height: 70px;
+    background-image: url('../assets/PC.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #171D25;
+}
+
+.menu-content .match-jeu {
+    border-radius: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: #DB850B;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+}

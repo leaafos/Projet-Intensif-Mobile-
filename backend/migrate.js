@@ -1,8 +1,11 @@
-const knex = require('knex')(require('./knexfile')['development']);
+const knex = require('knex')(require('./db')['development']);
 
 async function createTable() {
   try {
-    const exists = await knex.schema.hasTable('poubelles');
+
+    let exists; 
+
+    exists = await knex.schema.hasTable('poubelles');
     if (!exists) {
       await knex.schema.createTable('poubelles', table => {
         table.increments('id').primary();
