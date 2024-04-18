@@ -1,3 +1,124 @@
-.homepage{
-    color: red;
-}
+
+
+  
+  .title {
+    margin-bottom: 10px; 
+  }
+  
+  .title h2 {
+    font-size: 110%; 
+    margin-bottom: 10px; 
+    margin-top: 5%; 
+
+  }
+  
+  .recommendations p {
+    font-size: 10px; 
+    margin-top: 10%; 
+    margin-bottom: 10px; 
+  }
+
+  .Bestsellers,
+  .Bestsellers {
+    margin-bottom: 10px; 
+  }
+  
+  .Bestsellers h2 {
+    font-size: 110%; 
+    margin-bottom: 10px; 
+    margin-top: 5%;
+
+  }
+  
+  .Bestsellers p {
+    font-size: 10px; 
+    margin-top: 10%; 
+    margin-bottom: 10px; 
+  }
+
+  .Dernieressorties,
+  .Dernieressorties {
+    margin-bottom: 10px; 
+  }
+  
+  .Dernieressorties h2 {
+    font-size: 110%; 
+    margin-bottom: 10px; 
+    margin-top: 5%; 
+
+  }
+  
+  .Dernieressorties p {
+    font-size: 10px; 
+    margin-top: 10%; 
+    margin-bottom: 10px; 
+  }
+
+  .Jeuxdoccasion,
+  .Jeuxdoccasion {
+    margin-bottom: 10px; 
+  }
+  
+  .Jeuxdoccasion h2 {
+    font-size: 110%; 
+    margin-bottom: 10px; 
+    margin-top: 5%; 
+
+  }
+  
+  .Jeuxdoccasion p {
+    font-size: 10px; 
+    margin-top: 10%; 
+    margin-bottom: 10px; 
+  }
+
+  .Categories,
+  .Categories{
+    margin-bottom: 10px; 
+  }
+  
+  .Categories h2 {
+    font-size: 110%;
+    margin-bottom: 10px; 
+    margin-top: 5%; 
+
+  }
+  
+  .Categories p {
+    font-size: 10px; 
+    margin-top: 10%; 
+    margin-bottom: 10px; 
+  }
+
+
+
+  
+  .features {
+    margin-bottom: 20px;
+  }
+  
+  .features .scrollable-content {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px; 
+    max-width: 100%;
+    overflow-x: scroll;
+  }
+  
+  .square {
+    min-width: 27%;
+    max-width: 27%;
+    min-height: 117px;
+    max-height: 117px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .blockInner{
+    height: 60%;
+    width: 100%;
+    background-color: aqua;
+  }
+

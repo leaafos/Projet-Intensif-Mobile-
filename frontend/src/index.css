@@ -27,6 +27,7 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
+  max-width: 100vw;
   min-height: 100vh;
 }
 
@@ -52,6 +53,27 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+#root {
+  max-width: 100vw;
+  min-width: 100vw;
+  max-height: 100vh;
+  min-height: 100vh;
+  margin: 0 auto;
+  overflow: scroll;
+  display: flex;
+}
+
+.content {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  overflow: scroll;
+}
+.empty {
+  min-height: 10vh
+  
 }
 
 @media (prefers-color-scheme: light) {
