@@ -1,14 +1,13 @@
 import React from 'react';
+import '../styles/connexion.css';
+import BurgerMenu from '../components/BurgerMenu'
 
 
 export default function Connexion() {
     return (
-        <div>
-            <h1>Page Connexion</h1>
-            <p>Bienvenue dans la page Connexion !</p>
-            <Link to="/">
-                <button>Retour au menu </button>
-            </Link>
+        <BurgerMenu></BurgerMenu>,
+        <div className='header'>
+            <h1>Bon retour parmi nous les Shmupers !</h1>
         </div>
     )
 }
