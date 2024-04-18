@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import '../styles/burgerMenu.css'
 import { Link } from 'react-router-dom';
+import notificationIcon from  '../assets/notifications.svg';
+import messageIcon from '../assets/messages.svg';
+import orange from '../assets/orange.svg'
 
 function BurgerMenu() {
     const [isOpen, setIsOpen] = useState(false);
     const [searchTerm, setSearchTerm] = useState('');
+    const [searchResult, setSearchResult] = useState(null);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -17,7 +21,15 @@ function BurgerMenu() {
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log("Recherche soumise:", searchTerm);
+        setSearchResult("Resultat de la recherche");
+        setSearchTerm('');
     };
+
+    const handleClickSearch = (event) => {
+        event.stopPropagation();
+    };
+
+    console.log("Rendu du composant BurgerMenu");
 
     return (
         <div className={`burger-menu ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
@@ -26,18 +38,22 @@ function BurgerMenu() {
                 <div className="bar"></div>
                 <div className="bar"></div>
             </div>
+
             {isOpen && (
 
                 <div className="menu-content">
 
-                    <form onSubmit={handleSubmit}>
-                        <input
-                            type= "text"
-                            placeholder="Rechercher..."
-                            value={searchTerm}
-                            onChange={handleChange}
-                        />
-                        <button type="submit">Rechercher</button>
+                    <form onSubmit={handleSubmit} className="search-form">
+                        <div className="search-container">
+                            <input
+                                type= "text"
+                                placeholder="Rechercher un jeu"
+                                value={searchTerm}
+                                onChange={handleChange}
+                                onClick={handleClickSearch}
+                            />
+                            <button type="submit" className="search-button" onClick={handleClickSearch}></button>
+                        </div>
                     </form>
 
                     <Link to="/pc">
@@ -48,6 +64,10 @@ function BurgerMenu() {
                         <button className='bouton-playstation'>  </button>
                     </Link>
                     
+                    <Link to="/xbox">
+                        <button className='bouton-xbox'></button> 
+                    </Link>
+
                     <Link to="/nintendo">
                         <button className='bouton-nintendo'></button> 
                     </Link>
@@ -55,6 +75,28 @@ function BurgerMenu() {
                     <Link to="/swipe">
                         <button className="match-jeu">Match avec un jeu ! </button>    
                     </Link>
+
+                    <div className="bottom-content" onClick={handleClickSearch}>
+
+                        <Link to="/produit">
+                            <button className="bouton-notifications">
+                                <img className="notificon" src={notificationIcon}></img>  
+                                <img className="orange" src={orange}></img>    
+                                <p>Notifications </p>
+                            </button>
+                           
+                        </Link>
+
+                        <Link to="/annonces">
+                            <button className="bouton-messages"> 
+                                <img src={messageIcon}></img>    
+                                <p>Messages </p>
+                            </button>    
+                        </Link>
+
+                        <div className="circle"></div>
+
+                    </div>
                 
                 </div>
             )}

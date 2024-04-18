@@ -1,3 +1,9 @@
+/**********
+
+        MENU 
+
+*********/
+
 .burger-menu {
     position: fixed;
     top: 0; 
@@ -39,55 +45,120 @@
     transform: rotate(-45deg) translate(5px, -6px); /* Transformation pour la dernière barre */
 }
 
+/***********
+
+        CONTENU MENU 
+
+***********/
 .menu-content {
     width: 100%;
     position: absolute;
     display: flex;
     flex-direction: column; 
-    top: 35%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
 }
 
-.menu-content .bouton-playstation {
-    border-radius: 0px;
-    height: 70px;
-    background-image: url('../assets/Playstation.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #171D25;
+/******
+BARRE DE RECHERCHE
+*********/
+
+.menu-content .search-form {
+    position: relative;
+    width: 100%;
 }
 
-.menu-content .bouton-playstation {
-    border-radius: 0px;
+.search-container {
+    display: flex; 
+    align-items: center;
     width: 100%;
-    height: 70px;
-    background-image: url('../assets/Playstation.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #171D25;
+    height: 35px;
 }
 
-.menu-content .bouton-nintendo {
-    border-radius: 0px;
-    width: 100%;
-    height: 70px;
-    background-image: url('../assets/Nintendo.svg');
+.menu-content input[type="text"]{
+   background-color: #E3E3E3;
+   border: none;
+   color: black;
+   padding-left: 15px;
+   border-radius: 10px;
+   flex-grow: 1;
+   padding-right: 40px;
+   height: 35px;
+   margin-left: 10%;
+   margin-right: 10%;
+}
+
+.menu-content input::placeholder{
+    color: #94A3B8;
+    padding-left: 50px; 
+}
+
+.menu-content .search-button{
+    position: absolute;
+    background-color: #E3E3E3;
+    top: 50%;
+    right: 12%;
+    height: 30px;
+    background-image: url('../assets/search.svg');
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #171D25;
+    transform: translateY(-50%);
 }
+
+/******
+BOUTONS
+******/
 
 .menu-content .bouton-pc {
+    margin-top: 10%;
     border-radius: 0px;
     width: 100%;
-    height: 70px;
+    height: 80px;
     background-image: url('../assets/PC.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-color: #171D25;
+}
+
+.menu-content .bouton-playstation {
+    border-radius: 0px;
+    height: 80px;
+    width: 100%;
+    background-image: url('../assets/Playstation.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #171D25;
+}
+
+.menu-content .bouton-xbox {
+    border-radius: 0px;
+    width: 100%;
+    height: 80px;
+    background-image: url('../assets/Xbox.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #171D25;
+}
+
+.menu-content button.bouton-nintendo {
+    border-radius: 0px;
+    width: 100%;
+    height: 80px;
+    background-image: url('../assets/Nintendo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #171D25;
+    transition: background-color 0.3s;
+    touch-action: manipulation; 
+    -webkit-tap-highlight-color: #DB850B; 
+    cursor: pointer; 
+}
+
+.menu-content button.bouton-nintendo:active{
+    background-color: #DB850B;
 }
 
 .menu-content .match-jeu {
@@ -99,4 +170,63 @@
     font-style: normal;
     font-weight: 700;
     line-height: 22px;
+}
+
+/*******
+NOTIF ET MESSSAGE
+******/
+.bottom-content {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-content .bouton-notifications {
+    border-radius: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: #171D25;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-content .bouton-notifications .notificon{
+    position: absolute;
+    left: 32%;
+}
+
+.menu-content .bouton-notifications .orange{
+    position: relative ;
+    bottom: 13px;
+    left: 5px;
+}
+
+.menu-content .bouton-notifications img {
+    margin-right: 10px;
+}
+
+.menu-content .bouton-messages {
+    border-radius: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: #171D25;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-content .bouton-messages img {
+    margin-right: 10px;
+}
+
+.circle {
+    width: 70px; 
+    height: 70px; 
+    border-radius: 50%;
+    background-color: black;
+    margin-top: 10%; 
 }
