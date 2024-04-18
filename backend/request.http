@@ -1,4 +1,4 @@
-GET http://localhost:3000/products
+GET http://localhost:3000/produits
 
 ### Create an article
 POST http://localhost:3000/produits
@@ -9,17 +9,17 @@ Authorization: 1
 {
     "produitsId": 1,
     "name": "NeuroNet",
-    "description": "",
-    "categories": "",
+    "description": "NeuroNet est un jeu de gestion urbaine narratif où vous devez maintenir l'équilibre entre les besoins et les désirs de ses nombreux citoyens, afin de déterminer la destinée d'une ville post-cyberpunk à l'orée d'une nouvelle ère numérique.",
+    "categories": ["1","3"],
     "nomPlateforme" : "PC",
-    "commentairesId" : "",
+    "commentairesId" : ["1","2","3"],
     "taille": "12.4G",
-    "image": "",
-    "priceConseille": "17.99€"
-},
-{
+    "image": "backend/images/neuronet.png",
+    "priceConseille": "16.78€"
+}
+/*{
     "produitsId": 2,
-    "name": "The Game Awards",
+    "name": "Game Awards 2021",
     "description": "",
     "categories": "",
     "nomPlateforme" : "PC",
@@ -28,6 +28,205 @@ Authorization: 1
     "image": "",
     "priceConseille": "17.99€"
 }
+{
+    "produitsId": 3,
+    "name": "The Unliving",
+    "description": "",
+    "categories": "",
+    "nomPlateforme" : "PC",
+    "commentairesId" : "",
+    "taille": "12.4G",
+    "image": "",
+    "priceConseille": "17.99€"
+}
+{
+    "produitsId": 4,
+    "name": "Chants of Sennaar",
+    "description": "",
+    "categories": "",
+    "nomPlateforme" : "PC",
+    "commentairesId" : "",
+    "taille": "12.4G",
+    "image": "",
+    "priceConseille": "17.99€"
+}
+{
+    "produitsId": 5,
+    "name": "Asobu Indie Showcase",
+    "description": "",
+    "categories": "",
+    "nomPlateforme" : "PC",
+    "commentairesId" : "",
+    "taille": "12.4G",
+    "image": "",
+    "priceConseille": "17.99€"
+}
+{
+    "produitsId": 6,
+    "name": "Indiemag",
+    "description": "",
+    "categories": "",
+    "nomPlateforme" : "PC",
+    "commentairesId" : "",
+    "taille": "12.4G",
+    "image": "",
+    "priceConseille": "17.99€"
+}
+{
+    "produitsId": 7,
+    "name": "Street of Rage 4",
+    "description": "",
+    "categories": "",
+    "nomPlateforme" : "PC",
+    "commentairesId" : "",
+    "taille": "12.4G",
+    "image": "",
+    "priceConseille": "17.99€"
+}
+{
+    "produitsId": 8,
+    "name": "Kill It With Fire 2",
+    "description": "",
+    "categories": "",
+    "nomPlateforme" : "PC",
+    "commentairesId" : "",
+    "taille": "12.4G",
+    "image": "",
+    "priceConseille": "17.99€"
+}
+{
+    "produitsId": 9,
+    "name": "Outpost Infinity Siege",
+    "description": "",
+    "categories": "",
+    "nomPlateforme" : "PC",
+    "commentairesId" : "",
+    "taille": "12.4G",
+    "image": "",
+    "priceConseille": "17.99€"
+}
+{
+    "produitsId": 10,
+    "name": "Anger Foot",
+    "description": "",
+    "categories": "",
+    "nomPlateforme" : "PC",
+    "commentairesId" : "",
+    "taille": "12.4G",
+    "image": "",
+    "priceConseille": "17.99€"
+}
+{
+    "produitsId": 11,
+    "name": "Ripout",
+    "description": "",
+    "categories": "",
+    "nomPlateforme" : "PC",
+    "commentairesId" : "",
+    "taille": "12.4G",
+    "image": "",
+    "priceConseille": "17.99€"
+}
+{
+    "produitsId": 12,
+    "name": "Killer Frequency",
+    "description": "",
+    "categories": "",
+    "nomPlateforme" : "PC",
+    "commentairesId" : "",
+    "taille": "12.4G",
+    "image": "",
+    "priceConseille": "17.99€"
+}
+{
+    "produitsId": 13,
+    "name": "Orrstead",
+    "description": "",
+    "categories": "",
+    "nomPlateforme" : "PC",
+    "commentairesId" : "",
+    "taille": "12.4G",
+    "image": "",
+    "priceConseille": "17.99€"
+}
+{
+    "produitsId": 14,
+    "name": "Silicon City",
+    "description": "",
+    "categories": "",
+    "nomPlateforme" : "PC",
+    "commentairesId" : "",
+    "taille": "12.4G",
+    "image": "",
+    "priceConseille": "17.99€"
+}
+{
+    "produitsId": 15,
+    "name": "Tinytopia",
+    "description": "",
+    "categories": "",
+    "nomPlateforme" : "PC",
+    "commentairesId" : "",
+    "taille": "12.4G",
+    "image": "",
+    "priceConseille": "17.99€"
+}
+{
+    "produitsId": 16,
+    "name": "Dwarfheim",
+    "description": "",
+    "categories": "",
+    "nomPlateforme" : "PC",
+    "commentairesId" : "",
+    "taille": "12.4G",
+    "image": "",
+    "priceConseille": "17.99€"
+}
+{
+    "produitsId": 17,
+    "name": "Unleaving",
+    "description": "",
+    "categories": "",
+    "nomPlateforme" : "PC",
+    "commentairesId" : "",
+    "taille": "12.4G",
+    "image": "",
+    "priceConseille": "17.99€"
+}
+{
+    "produitsId": 18,
+    "name": "A Void Hope",
+    "description": "",
+    "categories": "",
+    "nomPlateforme" : "PC",
+    "commentairesId" : "",
+    "taille": "12.4G",
+    "image": "",
+    "priceConseille": "17.99€"
+}
+{
+    "produitsId": 19,
+    "name": "Murders On The Yangtze River",
+    "description": "",
+    "categories": "",
+    "nomPlateforme" : "PC",
+    "commentairesId" : "",
+    "taille": "12.4G",
+    "image": "",
+    "priceConseille": "17.99€"
+}
+{
+    "produitsId": 20,
+    "name": "Hauma",
+    "description": "",
+    "categories": "",
+    "nomPlateforme" : "PC",
+    "commentairesId" : "",
+    "taille": "12.4G",
+    "image": "",
+    "priceConseille": "17.99€"
+}*/
+
 
 ### Update an article
 PUT http://localhost:3000/produits/1
