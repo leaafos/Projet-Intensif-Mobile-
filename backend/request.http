@@ -1,14 +1,25 @@
-<<<<<<< HEAD
 GET http://localhost:3000/products
 
 ### Create an article
 POST http://localhost:3000/produits
 Content-Type: application/json
 Authorization: 1
+// c'est pour créer un produit 
 
 {
     "produitsId": 1,
     "name": "NeuroNet",
+    "description": "",
+    "categories": "",
+    "nomPlateforme" : "PC",
+    "commentairesId" : "",
+    "taille": "12.4G",
+    "image": "",
+    "priceConseille": "17.99€"
+},
+{
+    "produitsId": 2,
+    "name": "The Game Awards",
     "description": "",
     "categories": "",
     "nomPlateforme" : "PC",
@@ -29,45 +40,7 @@ Content-Type: application/json
 ### Delete an article
 DELETE http://localhost:3000/produits/4
 
-### Register
-POST http://localhost:3000/register
-Content-Type: application/json
-
-{
-    "username": "user3",
-    "password": "password1"
-}
-
-### Login
-POST http://localhost:3000/login
-Content-Type: application/json
-
-{
-    "username": "user2",
-    "password": "password1"
-=======
-GET http://localhost:3000/products
-
-### Create an article
-POST http://localhost:3000/articles
-Content-Type: application/json
-Authorization: 1
-
-{
-    "title": "Article 1",
-    "content": "This is the content of article 1"
-}
-
-### Update an article
-PUT http://localhost:3000/articles/1
-Content-Type: application/json
-
-{
-    "title": "Article 3"
-}
-
-### Delete an article
-DELETE http://localhost:3000/articles/4
+-----
 
 ### Register
 POST http://localhost:3000/register
@@ -85,5 +58,4 @@ Content-Type: application/json
 {
     "username": "user2",
     "password": "password1"
->>>>>>> 812069cd3d45a52c57de157e4632e873900c8137
 }

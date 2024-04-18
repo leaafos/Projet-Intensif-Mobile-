@@ -1,8 +1,8 @@
-const knex = require("./db")(require("./db.js")["development"]);
+const knex = require("./db"); 
 
 async function createTable() {
   try {
-    const exists = await knex.schema.hasTable("poubelles");
+    let exists = await knex.schema.hasTable("poubelles");
     if (!exists) {
       await knex.schema.createTable("poubelles", (table) => {
         table.increments("id").primary();
@@ -241,7 +241,7 @@ async function createTable() {
   } catch (error) {
     console.error("Erreur lors de la création de la table :", error);
   } finally {
-    // await knex.destroy();
+    await knex.destroy();
   }
 }
 
