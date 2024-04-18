@@ -55,7 +55,7 @@ input[type="password"]::placeholder {
 
 .overlay-image {
     position: absolute;
-    right: -1%;
+    right: -2%;
     bottom: 70%;
 }
 
@@ -86,17 +86,59 @@ input[type="password"]::placeholder {
     font-weight: bold;
 }
 
-button {
-    width: 100%;
+/*******
+IMAGES PLATEFORME
+********/
+
+.plateformes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.plateformes img {
+    border-radius: 50px;
+    margin: 10px;
+}
+/******
+BOUTON SOUMETTRE
+***/
+
+.soumettre {
+    position: absolute;
+    width: 70%;
     padding: 12px;
+    display: flex;
+    justify-content: center;
     background-color: #284BAF;
     color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 100px;
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s;
+    left: 15%;
 }
-button:hover {
+.soumettre:hover {
     background-color: #DB850B;
+}
+
+/*******
+INSCRIPTION
+****/
+
+.inscription {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: -40%;
+    left: 15%;
+}
+
+.bleu {
+    color: #284BAF;
+    margin-left: 2px;
+    display: flex;
+    align-items: center;
 }

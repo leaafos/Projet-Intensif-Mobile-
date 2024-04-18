@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import '../styles/connexion.css';
 import BurgerMenu from '../components/BurgerMenu';
 import Monsieur from '../assets/CONNEXION.png';
+import twitch from '../assets/twitch.png';
+import google from '../assets/google.png';
+import steam from '../assets/steam.png';
 
 export default function Connexion() {
 
@@ -52,10 +55,17 @@ export default function Connexion() {
                     </div>
 
                     <div className='plateformes'>
-                        
+                        <img src={twitch}></img>
+                        <img src={google}></img>
+                        <img src={steam}></img>
                     </div>
 
-                    <button type='submit'>Se connecter</button>
+                    <button type='submit' className='soumettre'>Se connecter</button>
+
+                    <div className='inscription'>
+                        <p>Pas encore de compte ? </p>
+                        <div className='bleu'> Créez un compte</div>
+                    </div>
                 </form>
             </div>
         </div>
