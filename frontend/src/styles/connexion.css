@@ -8,7 +8,12 @@ body{
     background-size: cover;
 }
 
+.header{
+    z-index:1000;
+}
+
 .titre {
+    z-index: 999;
     position : absolute;
     top: 20%;
     font-size: 11px;
