@@ -9,12 +9,17 @@ import Match from '../assets/match.png';
 import Trophe1 from '../assets/trophe1.png';
 import Trophe2 from '../assets/trophe2.png';
 import Trophe3 from '../assets/trophe3.png';
-import Backgrond2 from '../assets/background2.png'
+import Background2 from '../assets/background2.png'
+import Background from '../assets/BACKGROUND.png'
 
 
 const Homepage = () => {
     return (
-        <div className=" content">
+        <div className="homepage content">
+                <div class="background">
+                    <img src={Background2}/>
+                    <img src={Background}/>
+                </div>
                 <div className="empty">&nbsp;</div>
                 <div className="title">
                     <h2>Recommandations</h2>
@@ -50,7 +55,6 @@ const Homepage = () => {
                 <div className="title2">
                     <div className="round-image">
                         <h4 className='Leaders'>Leaders indé du mois !</h4>
-                        <image src={Backgrond2}></image>
                         <img src={Monsieur} className="monsieur"></img>
                     </div>
                     <div id='trophe'>

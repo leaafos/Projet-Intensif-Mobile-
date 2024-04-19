@@ -1,0 +1,23 @@
+.favoris-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligner les éléments horizontalement à gauche */
+}
+
+.favoris-container img {
+    margin-top: 90px; /* Déplace l'image d'enregistrement vers le bas */
+    margin-left: 190px; /* Déplace l'image d'enregistrement vers la droite autant que possible */
+}
+
+.titre3 {
+    position: absolute; /* Positionnement absolu par rapport au conteneur parent */
+    top: 90px; /* Ajustez la valeur de top selon vos besoins */
+    margin-left: 135px
+}
+
+.titre4{
+    position: absolute; /* Positionnement absolu par rapport au conteneur parent */
+    top: 190px; /* Ajustez la valeur de top selon vos besoins */
+    margin-left: 10px
+}
+

@@ -19,7 +19,7 @@ export default function Connexion() {
     };
 
     return (
-        <div className='body'>
+        <div className='content connexion'>
             <div className='header'>
                 <BurgerMenu />
             </div>

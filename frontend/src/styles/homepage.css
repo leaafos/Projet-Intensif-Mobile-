@@ -4,9 +4,6 @@ body{
   padding: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('../assets/background2.png'), url('../assets/BACKGROUND.png');
-  background-repeat: no-repeat;
-  background-size: cover;
 }
   
   .title {
@@ -185,7 +182,7 @@ body{
 .gauche{
   margin-left: 200px;
   background-color: orange;
-  width: 165px; /* Définissez la largeur du bouton */
+  width: 160px; /* Définissez la largeur du bouton */
   height: 40px;
   font-size: 13px;
 }
