@@ -4,8 +4,9 @@
 const knex = require('../db');
 
 // Create
-async function createHistoriques(hisotriquesId, usersId, productsId, date, heure) {
-  return await knex('users').insert({hisotriquesId, usersId, productsId, date, heure});
+async function createHistoriques(data) {
+  const [id] = await knex('users').insert({data});
+  return getHistoriquesById(id)
 }
 
 // Read
@@ -13,18 +14,18 @@ async function getAllHistoriques() {
   return await knex.select().from('historiques');
 }
 
-async function getHistoriquesById(historiquesId) {
-  return await knex('historiques').where({ historiquesId }).first();
+async function getHistoriquesById(id) {
+  return await knex('historiques').where({id}).first();
 }
 
 // Update
-async function updateHistoriques(historiquesId, usersId, productsID) {
-  return await knex('historiques').where({historiquesId}).update({historiquesId, usersId, productsID  });
+async function updateHistoriques(id, usersId, productsID) {
+  return await knex('historiques').where({id}).update({usersId, productsID});
 }
 
 // Delete
-async function deleteHistoriques(historiquesId) {
-  return await knex('users').where({ historiquesId }).del();
+async function deleteHistoriques(id) {
+  return await knex('users').where({id}).del();
 }
 
 module.exports = {

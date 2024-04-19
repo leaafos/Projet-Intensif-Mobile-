@@ -3,8 +3,9 @@
 const knex = require('../db');
 
 // Create
-async function createNotification(notificationsId, productsId, date, heure, contenu) {
-  return await knex('notifications').insert({ notificationsId, productsId, date, heure, contenu});
+async function createNotification(data) {
+ const [id] = await knex('notifications').insert({data});
+ return getNotificationById(id)
 }
 
 // Read
@@ -12,13 +13,13 @@ async function getAllNotifications() {
   return await knex.select().from('notifications');
 }
 
-async function getNotificationById(notificationsId) {
-  return await knex('notifications').where({ notificationsId }).first();
+async function getNotificationById(id) {
+  return await knex('notifications').where({id}).first();
 }
 
 // Delete
-async function deleteNotifications(notificationsId) {
-  return await knex('notifications').where({ notificationsId }).del();
+async function deleteNotifications(id) {
+  return await knex('notifications').where({id}).del();
 }
 
 module.exports = {
@@ -28,5 +29,6 @@ module.exports = {
   delete: deleteNotifications,
   routePrefix: 'notifications'
 };
+
 
 // npm install knex sqlite3

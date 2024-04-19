@@ -3,8 +3,9 @@
 const knex = require('../db');
 
 // Create
-async function createMessage(messagesId, vendeursId, usersId, message, status, date, heure) {
-  return await knex('messages').insert({ messagesId, vendeursId, usersId, message, status, date, heure });
+async function createMessage(data) {
+  const [id] = await knex('messages').insert({data});
+  return getMessageById(id)
 }
 
 // Read
@@ -12,13 +13,13 @@ async function getAllMessages() {
   return await knex.select().from('messages');
 }
 
-async function getMessageById(messagesId) {
-  return await knex('messages').where({ messagesId }).first();
+async function getMessageById(id) {
+  return await knex('messages').where({id}).first();
 }
 
 // Delete
-async function deleteMessage(messagesId) {
-  return await knex('messages').where({ messagesId }).del();
+async function deleteMessage(id) {
+  return await knex('messages').where({id}).del();
 }
 
 module.exports = {
@@ -27,7 +28,6 @@ module.exports = {
   get: getMessageById,
   delete:   deleteMessage,
   routePrefix: 'messages'
-
 };
 
 // npm install knex sqlite3
