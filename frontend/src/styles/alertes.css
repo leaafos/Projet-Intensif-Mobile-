@@ -1,0 +1,250 @@
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*******
+
+bouton création alerte
+
+********/
+
+body {
+    overflow: hidden;
+}
+
+.root{
+    background-color: #171D25;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bouton-alerte {
+    margin-top: 20px;
+    color: white;
+    height: 42px;
+    background-color: #91ACFD;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    padding-left: 60px;
+    border-radius: 8px;
+}
+
+
+.bouton-alerte p {
+    padding-right: 65px;
+}
+.bouton-alerte img {
+    padding-right: 10px;
+}
+
+/*******
+
+overlay
+
+********/
+
+.overlay {
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1000; 
+    display: none; 
+}
+
+.overlay.open {
+    display: block; 
+}
+
+.overlay-alertes {
+    width: 100%;
+}
+
+.overlay-alertes h1 {
+    background: none;
+    font-size: 22px;
+    margin-left: 20%;
+    width: 100%;
+    margin-top: 0;
+}
+
+/* Styles pour le formulaire */
+
+.haut-page {
+    width: 100%;
+    height: 50px;
+    margin-left: 200%;
+    margin-top: 5%;
+    margin-right: 15%;
+}
+
+.haut-page .croix {
+    margin-top: 0;
+    margin-right: 15px;
+}
+
+.question {
+    color: #575757;
+    height: 50px;
+    margin-top: 40px;
+}
+
+.question label {
+    padding-left: 15px;
+}
+
+.question input, select {
+    height: 50px;
+}
+
+.formulaire-fond {
+    position: absolute;
+    top:0px;
+    width: 100%;
+    height: 100%;
+    background-color: #171D25;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    position: relative;
+    top: 0%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-container p {
+    font-size: 24px;
+}
+
+
+
+/* Styles pour le bouton de fermeture */
+.form-container button {
+    margin-top: 150px;
+    margin-right: 70px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Styles pour les champs du formulaire */
+.form-container input,
+.form-container select {
+    margin-bottom: 10px;
+    width: 100%;
+    padding-left: 15px;
+    font-size: 16px;
+    line-height: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.70);
+    background-color: rgba(255, 255, 255, 0.60);
+    color: #575757;
+    border-radius: 50px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.submit button{
+    margin-bottom: 10px;
+    height: 50px;
+    width: 100%;
+    padding-left: 15px;
+    font-size: 16px;
+    line-height: 22px;
+    background-color: #284BAF;
+    border-radius: 50px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+/* Styles pour le message d'alerte */
+.overlay-completed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #171D25;
+    background-image: url('../assets/background1-alertes.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.alerte-créée {
+    border-radius: 10px;
+    width: 100%; 
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.alerte-créée h1 {
+    margin-top: 180px;
+    font-size: 38px;
+    margin-right: 80px;
+}
+
+.alerte-créée p {
+    text-align: left;
+    margin-left: 60px;
+}
+
+.alerte-créée img.populasse {
+    position: absolute; 
+    top: 48%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 2;
+    width: 100%;
+}
+
+.alerte-créée img.check {
+    transform: scale(1.8);
+    position: absolute;
+    Top: 20%;
+    Right: 24%;
+}
+  
+.alerte-créée button {
+    position: absolute;
+    top: 18px;
+    right: 9px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.alerte-créée p {
+    color: rgba(255, 255, 255, 0.65);    ;
+    font-family: Lato, 400;
+    line-height: 26px; 
+    font-size: 18px;
+    margin-top: -15px;
+}
+
+.nOOb button {
+    margin-top: 650px;
+    margin-right: 35px;
+    height: 50px;
+    width: 80%;
+    font-size: 16px;
+    line-height: 22px;
+    background-color: #284BAF;
+    border-radius: 50px;
+    font-size: 18px;
+    box-sizing: border-box;
+    pointer-events: auto;
+    cursor: pointer;
+}

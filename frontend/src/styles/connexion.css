@@ -23,7 +23,7 @@
     margin-right: 30px;
 }
 
-.logs {
+.logs-connexion {
     position: absolute;
     top: 45%;
     width: 100%;
@@ -58,7 +58,7 @@ input[type="password"]::placeholder {
     color: #575757; 
 }
 
-.overlay-image {
+.overlay-image-connexion {
     position: absolute;
     right: -2%;
     bottom: 70%;
@@ -134,7 +134,7 @@ BOUTON SOUMETTRE
 INSCRIPTION
 ****/
 
-.inscription {
+.inscription-connexion {
     position: absolute;
     display: flex;
     justify-content: center;

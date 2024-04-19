@@ -10,6 +10,7 @@ import Swipe from './pages/Swipe.jsx';
 import Playstation from './pages/Playstation.jsx';
 import Connexion from './pages/Connexion.jsx';
 import Inscription from './pages/Inscription.jsx';
+import Alertes from './components/Alertes.jsx';
 
 function Routes () {
     return (
@@ -26,6 +27,7 @@ function Routes () {
                 <Route exact path="/playstation" component={Playstation}/>
                 <Route exact path="/connexion" component={Connexion}/>
                 <Route exact path="/inscription" component={Inscription}/>
+                <Route exact path="/alertes" component={Alertes}/>
             </Switch>
         </Router>
     )

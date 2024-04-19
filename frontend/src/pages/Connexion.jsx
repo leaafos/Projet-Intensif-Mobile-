@@ -25,7 +25,7 @@ export default function Connexion() {
             <div className='titre'>
                  <h1>Bon retour parmi nous les Shmupers !</h1>
             </div>
-            <div className='logs'>
+            <div className='logs-connexion'>
                 <form onSubmit={handleSubmit}>
                     <div className='form-group'>
                         <input
@@ -45,7 +45,7 @@ export default function Connexion() {
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                         />
-                        <img src={Monsieur} className="overlay-image"></img>
+                        <img src={Monsieur} className="overlay-image-connexion"></img>
                     </div>
 
                     <div className='line-container'>
@@ -62,7 +62,7 @@ export default function Connexion() {
 
                     <button type='submit' className='soumettre'>Se connecter</button>
 
-                    <div className='inscription'>
+                    <div className='inscription-connexion'>
                         <p>Pas encore de compte ? </p>
                         <div className='bleu'> Créez un compte</div>
                     </div>
