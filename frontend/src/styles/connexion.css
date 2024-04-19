@@ -3,6 +3,7 @@
     font-size: 12px;
 }
 body{
+    position: absolute;
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -11,6 +12,11 @@ body{
 
 .header{
     z-index:1000;
+    position: relative;
+}
+
+.header img {
+    position: fixed;
 }
 
 .titre {
@@ -292,9 +298,10 @@ INSCRIPTION
     left: 15%;
 }
 
-.bleu {
+.bleu-connexion {
     color: #284BAF;
-    margin-left: 2px;
+    margin-left: 3px;
+    margin-top: 16px;
     display: flex;
     align-items: center;
     cursor: pointer;

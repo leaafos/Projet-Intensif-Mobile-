@@ -138,13 +138,16 @@ INSCRIPTION
     position: absolute;
     display: flex;
     justify-content: center;
+    font-size: 16px;
     bottom: -25%;
-    left: 25%;
+    left: 24%;
 }
 
 .bleu {
     color: #284BAF;
-    margin-left: 2px;
+    margin-left: 4px;
+    margin-top: 16px;
+    font-size: 16px;
     display: flex;
     align-items: center;
     cursor: pointer;

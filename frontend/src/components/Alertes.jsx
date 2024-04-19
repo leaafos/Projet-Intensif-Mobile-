@@ -116,7 +116,7 @@ function Alertes(){
                         <h1>Alerte posée</h1>
                         <p>Tu recevras par mail si des offres <br></br> correspondent à ton prix.</p>
                         <Link to="/">
-                        <img src={Populasse} className='populasse'></img>
+                            <img src={Populasse} className='populasse'></img>
                         </Link>
                         <img src={Check} className='check'></img>
                         <div className='nOOb'>

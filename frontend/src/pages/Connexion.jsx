@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import '../styles/connexion.css';
+import { Link } from 'react-router-dom';
 import BurgerMenu from '../components/BurgerMenu';
 import Monsieur from '../assets/CONNEXION.png';
 import twitch from '../assets/twitch.png';
 import google from '../assets/google.png';
 import steam from '../assets/steam.png';
+import Logo from '../assets/LOGO.svg';
 
 export default function Connexion() {
 
@@ -20,7 +22,8 @@ export default function Connexion() {
     return (
         <div className='body'>
             <div className='header'>
-                <BurgerMenu />
+                <img src={Logo} alt="Logo"></img>
+                <BurgerMenu></BurgerMenu>
             </div>
             <div className='titre'>
                  <h1>Bon retour parmi nous les Shmupers !</h1>
@@ -64,7 +67,9 @@ export default function Connexion() {
 
                     <div className='inscription-connexion'>
                         <p>Pas encore de compte ? </p>
-                        <div className='bleu'> Créez un compte</div>
+                        <Link to="/inscription">
+                            <div className='bleu-connexion'> <b>Créez un compte</b></div>
+                        </Link>
                     </div>
                 </form>
             </div>

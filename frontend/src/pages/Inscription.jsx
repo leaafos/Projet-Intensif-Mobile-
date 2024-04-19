@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import BurgerMenu from '../components/BurgerMenu';
 import Monsieur from '../assets/CONNEXION.png';
 import twitch from '../assets/twitch.png';
 import google from '../assets/google.png';
 import steam from '../assets/steam.png';
 import '../styles/inscription.css';
+import Logo from '../assets/LOGO.svg';
 
 export default function Inscription() {
 
@@ -21,6 +23,7 @@ export default function Inscription() {
     return (
         <div className='body'>
             <div className='header'>
+            <img src={Logo} alt="Logo"></img>
                 <BurgerMenu />
             </div>
             <div className='titre'>
@@ -85,7 +88,9 @@ export default function Inscription() {
 
                     <div className='inscription'>
                         <p>Dejà un compte ? </p>
-                        <div className='bleu'> Se connecter</div>
+                        <Link to="/connexion">
+                            <div className='bleu'> <b>Se connecter</b></div>
+                        </Link>
                     </div>
                 </form>
             </div>
