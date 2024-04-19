@@ -1,17 +1,4 @@
-<<<<<<< HEAD
-import React from 'react';
-import '../styles/connexion.css';
-import BurgerMenu from '../components/BurgerMenu'
 
-
-export default function Connexion() {
-    return (
-        <BurgerMenu></BurgerMenu>,
-        <div className='header'>
-            <h1>Bon retour parmi nous les Shmupers !</h1>
-        </div>
-    )
-=======
 import React, { useState } from 'react';
 import '../styles/connexion.css';
 import BurgerMenu from '../components/BurgerMenu';
@@ -84,5 +71,5 @@ export default function Connexion() {
             </div>
         </div>
     )
->>>>>>> e8a827f87c7d293aaaea1260480b2e2f5ff93aed
+
 }
