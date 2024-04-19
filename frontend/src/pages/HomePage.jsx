@@ -1,6 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../styles/homepage.css'
+import { Link } from 'react-router-dom';
+import headup from'../assets/headup.png';
+import d from '../assets/d.png';
+import nl from '../assets/nl.png'
+
 
 const Homepage = () => {
     return (
@@ -37,13 +41,15 @@ const Homepage = () => {
             
                     </div>
                 </div>
-                <div className= "title">
+                <div className="title">
                     <h2>Leaders indé 
                         du mois !</h2>
-                        <img src="image 64.png"alt="Image 1" className="round-image" />
-                        <img src="image 63.png" alt="Image 2" className="round-image" />
-                        <img src="image 62.png" alt="Image 3" className="round-image" />
-
+                        <div className="round-image">
+                        <img src= {headup}></img> 
+                        <img src= {d}></img>
+                        <img src= {nl}></img>
+                        </div>
+                               
                 </div>
                 <div className="title">
                     <h2>Best Sellers</h2>

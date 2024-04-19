@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Menu from '../components/Menu.jsx';
 
 export default function Annonces() {
     return (
@@ -10,7 +9,6 @@ export default function Annonces() {
             <Link to="/">
                 <button>Retour au menu </button>
             </Link>
-            <Menu />
         </div>
     )
 }

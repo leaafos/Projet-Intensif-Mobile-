@@ -2,19 +2,19 @@
 const express = require("express");
 
 const app = express();
-//const users = require('./Models/userModel.js');
+const users = require('./models/userModel.js');
 
 
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(async (req, res, next) => {
+/*app.use(async (req, res, next) => {
   if (req.headers.authorization) {
     req.user = await users.getUserById(parseInt(req.headers.authorization));
   }
   next();
-});
+});*/
 
 app.get("/", (req, res) => {
   res.send("Hello World");

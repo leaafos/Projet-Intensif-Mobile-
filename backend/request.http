@@ -1,7 +1,10 @@
-<<<<<<< HEAD
+
+
 GET http://localhost:3000/products
 
-### Create an article
+GET http://localhost:3000/produits
+
+### Create an product
 POST http://localhost:3000/produits
 Content-Type: application/json
 Authorization: 1
@@ -9,13 +12,13 @@ Authorization: 1
 {
     "produitsId": 1,
     "name": "NeuroNet",
-    "description": "",
-    "categories": "",
+    "description": "NeuroNet est un jeu de gestion urbaine narratif où vous devez maintenir l'équilibre entre les besoins et les désirs de ses nombreux citoyens, afin de déterminer la destinée d'une ville post-cyberpunk à l'orée d'une nouvelle ère numérique.",
+    "categories": ["1","3"],
     "nomPlateforme" : "PC",
-    "commentairesId" : "",
+    "commentairesId" : ["1","2","3"],
     "taille": "12.4G",
-    "image": "",
-    "priceConseille": "17.99€"
+    "image": "backend/images/neuronet.png",
+    "priceConseille": "16.78€"
 }
 
 ### Update an article
@@ -29,45 +32,7 @@ Content-Type: application/json
 ### Delete an article
 DELETE http://localhost:3000/produits/4
 
-### Register
-POST http://localhost:3000/register
-Content-Type: application/json
-
-{
-    "username": "user3",
-    "password": "password1"
-}
-
-### Login
-POST http://localhost:3000/login
-Content-Type: application/json
-
-{
-    "username": "user2",
-    "password": "password1"
-=======
-GET http://localhost:3000/products
-
-### Create an article
-POST http://localhost:3000/articles
-Content-Type: application/json
-Authorization: 1
-
-{
-    "title": "Article 1",
-    "content": "This is the content of article 1"
-}
-
-### Update an article
-PUT http://localhost:3000/articles/1
-Content-Type: application/json
-
-{
-    "title": "Article 3"
-}
-
-### Delete an article
-DELETE http://localhost:3000/articles/4
+-----
 
 ### Register
 POST http://localhost:3000/register
@@ -85,5 +50,5 @@ Content-Type: application/json
 {
     "username": "user2",
     "password": "password1"
->>>>>>> 812069cd3d45a52c57de157e4632e873900c8137
+
 }

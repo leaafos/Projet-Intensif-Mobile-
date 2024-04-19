@@ -122,3 +122,9 @@
     background-color: aqua;
   }
 
+  .round-image {
+    border-radius: 50%; /* Pour rendre les images rondes */
+    margin-right: 20px; /* Espacement horizontal entre chaque image */
+}
+
+
