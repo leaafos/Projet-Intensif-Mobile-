@@ -4,11 +4,13 @@ import Monsieur from '../assets/CONNEXION.png';
 import twitch from '../assets/twitch.png';
 import google from '../assets/google.png';
 import steam from '../assets/steam.png';
+import '../styles/inscription.css';
 
 export default function Inscription() {
 
     const [username, setUserName] = useState('');
     const [password, setPassword] = useState('');
+    const [email, setEmail] = useState('');
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -22,14 +24,14 @@ export default function Inscription() {
                 <BurgerMenu />
             </div>
             <div className='titre'>
-                 <h1>Bon retour parmi nous les Shmupers !</h1>
+                 <h1>Rentre dans la HuntSquad</h1>
             </div>
             <div className='logs'>
                 <form onSubmit={handleSubmit}>
                     <div className='form-group'>
                         <input
                             type='text'
-                            placeholder="Nom d'utilisateur ou Email"
+                            placeholder="Nom d'utilisateur"
                             id='username'
                             value={username}
                             onChange={(e) => setUserName(e.target.value)}
@@ -37,9 +39,29 @@ export default function Inscription() {
                         />
                     </div>
                     <div className='form-group'>
+                        <input
+                            type='text'
+                            placeholder="Email"
+                            id='email'
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
+                        />
+                    </div>
+                    <div className='form-group'>
+                        <input
+                            type='text'
+                            placeholder="Mot de passe"
+                            id='motDePasse'
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            required
+                        />
+                    </div>
+                    <div className='form-group'>
                         <input 
                             type='password'
-                            placeholder="Mot de passe"
+                            placeholder="Confirmez votre mot de passe"
                             id='password'
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
@@ -48,9 +70,9 @@ export default function Inscription() {
                     </div>
 
                     <div className='line-container'>
-                        <div class="line_1"></div>
-                        <div class="text">se connecter avec</div>
-                        <div class="line_2"></div>
+                        <div className="line_1"></div>
+                        <div className="text">s'identifier avec</div>
+                        <div className="line_2"></div>
                     </div>
 
                     <div className='plateformes'>
@@ -59,11 +81,11 @@ export default function Inscription() {
                         <img src={steam}></img>
                     </div>
 
-                    <button type='submit' className='soumettre'>Se connecter</button>
+                    <button type='submit' className='soumettre'>S'inscrire</button>
 
                     <div className='inscription'>
-                        <p>Pas encore de compte ? </p>
-                        <div className='bleu'> Créez un compte</div>
+                        <p>Dejà un compte ? </p>
+                        <div className='bleu'> Se connecter</div>
                     </div>
                 </form>
             </div>

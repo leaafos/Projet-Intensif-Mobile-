@@ -49,9 +49,9 @@ export default function Connexion() {
                     </div>
 
                     <div className='line-container'>
-                        <div class="line_1"></div>
-                        <div class="text">se connecter avec</div>
-                        <div class="line_2"></div>
+                        <div className="line_1"></div>
+                        <div className="text">se connecter avec</div>
+                        <div className="line_2"></div>
                     </div>
 
                     <div className='plateformes'>

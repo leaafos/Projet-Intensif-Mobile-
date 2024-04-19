@@ -9,14 +9,14 @@
 }
 
 .header{
-    z-index:1000;
+    z-index:900;
 }
 
 .titre {
-    z-index: 999;
+    z-index: 700;
     position : absolute;
     top: 20%;
-    font-size: 11px;
+    font-size: 13px;
     color: #FFF;
     text-shadow: 0px 0px 10.8px rgba(0, 0, 0, 0.72);
     margin-left: 30px;
@@ -25,7 +25,7 @@
 
 .logs {
     position: absolute;
-    top: 45%;
+    top: 38%;
     width: 100%;
 }
 
@@ -60,8 +60,8 @@ input[type="password"]::placeholder {
 
 .overlay-image {
     position: absolute;
-    right: -2%;
-    bottom: 70%;
+    right: 1%;
+    bottom: 85%;
 }
 
 .line-container {
@@ -138,8 +138,8 @@ INSCRIPTION
     position: absolute;
     display: flex;
     justify-content: center;
-    bottom: -40%;
-    left: 15%;
+    bottom: -25%;
+    left: 25%;
 }
 
 .bleu {
