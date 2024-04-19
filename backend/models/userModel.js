@@ -3,8 +3,9 @@
 const knex = require('../db');
 
 // Create
-async function createUser(usersId, pseudo, email, telephone, motDePasse, adresse, ville, codePostal, pays, dateInscription, langue, status, dateNaissance, photo) {
-  return await knex('users').insert({usersId, pseudo, email, telephone, motDePasse, adresse, ville, codePostal, pays, dateInscription, langue, status, dateNaissance, photo });
+async function createUser(data) {
+  const [id] = await knex('users').insert({data});
+  return getUserById(id)
 }
 
 // Read
@@ -12,18 +13,18 @@ async function getAllUsers() {
   return await knex.select().from('users');
 }
 
-async function getUserById(userId) {
-  return await knex('users').where({ userId }).first();
+async function getUserById(id) {
+  return await knex('users').where({id}).first();
 }
 
 // Update
-async function updateUser(userId, pseudo, email, telephone, motDePasse, adresse, ville, codePostal, pays, langue, status, dateNaissance, photo) {
-  return await knex('users').where({ userId }).update({ pseudo, email, telephone, motDePasse, adresse, ville, codePostal, pays, langue, status, dateNaissance, photo });
+async function updateUser(id, pseudo, email, telephone, motDePasse, adresse, ville, codePostal, pays, langue, status, dateNaissance, photo) {
+  return await knex('users').where({id}).update({ pseudo, email, telephone, motDePasse, adresse, ville, codePostal, pays, langue, status, dateNaissance, photo });
 }
 
 // Delete
-async function deleteUser(userId) {
-  return await knex('users').where({ userId }).del();
+async function deleteUser(id) {
+  return await knex('users').where({id}).del();
 }
 
 module.exports = {

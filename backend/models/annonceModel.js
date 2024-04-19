@@ -3,8 +3,9 @@
 const knex = require('../db');
 
 // Create
-async function createAnnonces(annoncesId, productsId, price, date, lien, vendeurId) {
-  return await knex('annonces').insert({annoncesId, productsId, price, date, lien, vendeurId});
+async function createAnnonces(data) {
+  const [id] = await knex('annonces').insert({data});
+  return getAnnoncesById(id)
 }
 
 // Read
@@ -12,18 +13,18 @@ async function getAllAnnonces() {
   return await knex.select().from('annonces');
 }
 
-async function getAnnoncesById(annoncesId) {
-  return await knex('annonces').where({ annoncesId }).first();
+async function getAnnoncesById(id) {
+  return await knex('annonces').where({id}).first();
 }
 
 // Update
-async function updateAnnonces(annoncesId, productsId, price) {
-  return await knex('annonces').where({annoncesId}).update({annoncesId, productsId, price,});
+async function updateAnnonces(id, productsId, price) {
+  return await knex('annonces').where({id}).update({productsId, price,});
 }
 
 // Delete
-async function deleteAnnonces(annoncesId) {
-  return await knex('alertes').where({ annoncesId }).del();
+async function deleteAnnonces(id) {
+  return await knex('alertes').where({id}).del();
 }
 
 module.exports = {
@@ -34,5 +35,6 @@ module.exports = {
   delete: deleteAnnonces,
   routePrefix: 'annonces'
 };
+
 
 // npm install knex sqlite3

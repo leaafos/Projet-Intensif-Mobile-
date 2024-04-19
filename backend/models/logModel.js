@@ -3,8 +3,9 @@
 const knex = require('../db');
 
 // Create
-async function createLog(logsId, userId, date, heure) {
-  return await knex('logs').insert({ logsId, userId, date, heure });
+async function createLog(data) {
+  const [id] = await knex('logs').insert({data});
+  return getLogById(id)
 }
 
 // Read
@@ -13,12 +14,12 @@ async function getAllLogs() {
 }
 
 async function getLogById(id) {
-  return await knex('logs').where({ logsId }).first();
+  return await knex('logs').where({id}).first();
 }
 
 // Delete
 async function deleteLog(id) {
-  return await knex('logs').where({ logsId }).del();
+  return await knex('logs').where({id}).del();
 }
 
 module.exports = {
@@ -28,5 +29,6 @@ module.exports = {
   delete: deleteLog,
   routePrefix: 'logs'
 };
+
 
 // npm install knex sqlite3
