@@ -7,6 +7,8 @@ import Platform from './pages/Nintendo.jsx';
 import Swipe from './pages/Swipe.jsx';
 import Connexion from './pages/Connexion.jsx';
 import Favoris from './pages/Favoris.jsx';
+import Inscription from './pages/Inscription.jsx';
+import Alertes from './components/Alertes.jsx';
 
 function Routes () {
     return (
@@ -20,6 +22,8 @@ function Routes () {
                 <Route exact path="/swipe" component={Swipe}/>
                 <Route exact path="/connexion" component={Connexion}/>
                 <Route exact path="/favoris" component={Favoris}/>
+                <Route exact path="/inscription" component={Inscription}/>
+                <Route exact path="/alertes" component={Alertes}/>
             </Switch>
         </Router>
     )

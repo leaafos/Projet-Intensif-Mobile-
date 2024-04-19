@@ -3,8 +3,9 @@
 const knex = require('../db');
 
 // Create
-async function createAlertes(alertesId, usersId, productsId, price, date, status) {
-  return await knex('alertes').insert({alertesId, usersId, productsId, price, date, status});
+async function createAlertes(data) {
+  const [id] = await knex('alertes').insert(data);
+  return getAlertesById(id)
 }
 
 // Read
@@ -12,18 +13,18 @@ async function getAllAlertes() {
   return await knex.select().from('alertes');
 }
 
-async function getAlertesById(alertesId) {
-  return await knex('alertes').where({ alertesId }).first();
+async function getAlertesById(id) {
+  return await knex('alertes').where({id}).first();
 }
 
 // Update
-async function updateAlertes(alertesId,productsId, price, status) {
-  return await knex('alertes').where({alertesId}).update({alertesId,productsId, price, status });
+async function updateAlertes(id,productsId, price, status) {
+  return await knex('alertes').where({id}).update({productsId, price, status });
 }
 
 // Delete
-async function deleteAlertes(alertesId) {
-  return await knex('alertes').where({ alertesId }).del();
+async function deleteAlertes(id) {
+  return await knex('alertes').where({id}).del();
 }
 
 module.exports = {
@@ -34,5 +35,6 @@ module.exports = {
   update : updateAlertes,
   routePrefix: 'alertes'
 };
+
 
 // npm install knex sqlite3

@@ -3,8 +3,9 @@
 const knex = require('../db');
 
 // Create
-async function createPoubelle(poubellesId, usersId, productsId, date) {
-  return await knex('boissons').insert({ poubellesId, usersId, productsId, date});
+async function createPoubelle(data) {
+  const [id] = await knex('poubelles').insert({data});
+  return getPoubelleById(id)
 }
 
 // Read
@@ -12,13 +13,13 @@ async function getAllPoubelles() {
   return await knex.select().from('poubelles');
 }
 
-async function getPoubelleById(poubellesid) {
-  return await knex('poubelles').where({ poubellesid }).first();
+async function getPoubelleById(id) {
+  return await knex('poubelles').where({id}).first();
 }
 
 // Delete
-async function deletePoubelle(poubellesid) {
-  return await knex('poubelles').where({ poubellesid }).del();
+async function deletePoubelle(id) {
+  return await knex('poubelles').where({id}).del();
 }
 
 module.exports = {
@@ -28,5 +29,6 @@ module.exports = {
   delete: deletePoubelle,
   routePrefix: 'poubelles'
 };
+
 
 // npm install knex sqlite3

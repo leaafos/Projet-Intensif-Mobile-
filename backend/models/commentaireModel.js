@@ -3,8 +3,9 @@
 const knex = require('../db');
 
 // Create
-async function createCommentaire(commentairesId, usersId, productsId, commentaire, note) {
-  return await knex('commentaires').insert({ commentairesId, usersId, productsId, commentaire, note });
+async function createCommentaire(data) {
+  const [id] = await knex('commentaires').insert({data});
+  return getCommentaireById(id)
 }
 
 // Read
@@ -12,13 +13,13 @@ async function getAllCommentaires() {
   return await knex.select().from('commentaires');
 }
 
-async function getCommentaireById(commentairesId) {
-  return await knex('commentaires').where({ commentairesId }).first();
+async function getCommentaireById(id) {
+  return await knex('commentaires').where({id}).first();
 }
 
 // Delete
-async function deleteCommentaire(commentairesId) {
-  return await knex('commentaires').where({ commentairesId }).del();
+async function deleteCommentaire(id) {
+  return await knex('commentaires').where({id}).del();
 }
 
 module.exports = {
@@ -28,5 +29,6 @@ module.exports = {
   delete: deleteCommentaire,
   routePrefix: 'commentaires'
 };
+
 
 // npm install knex sqlite3

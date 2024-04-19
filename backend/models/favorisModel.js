@@ -3,8 +3,9 @@
 const knex = require('../db');
 
 // Create
-async function createFavoris(favorisId, userId, productId, collectionsId, annonceId, date) {
-  return await knex('favoris').insert({ favorisId, userId, productId, collectionsId, annonceId, date });
+async function createFavoris(data) {
+  const [id] = await knex('favoris').insert({data});
+  return getFavorisById(id)
 }
 
 // Read
@@ -12,18 +13,18 @@ async function getAllFavoris() {
   return await knex.select().from('favoris');
 }
 
-async function getFavorisById(favorisId) {
-  return await knex('favoris').where({ favorisId }).first();
+async function getFavorisById(id) {
+  return await knex('favoris').where({id}).first();
 }
 
 // Update
-async function updateFavoris(productId,collectionsId, annonceId) {
-  return await knex('favoris').where({ favorisId }).update({ productId, collectionsId, annonceId });
+async function updateFavoris(id,productId,collectionsId, annonceId) {
+  return await knex('favoris').where({id}).update({productId, collectionsId, annonceId });
 }
 
 // Delete
-async function deleteFavoris(favorisId) {
-  return await knex('favoris').where({ favorisId }).del();
+async function deleteFavoris(id) {
+  return await knex('favoris').where({id}).del();
 }
 
 module.exports = {
@@ -34,5 +35,6 @@ module.exports = {
   delete: deleteFavoris,
   routePrefix: 'favoris'
 };
+
 
 // npm install knex sqlite3

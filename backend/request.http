@@ -1,24 +1,33 @@
+GET http://localhost:3000/produits?nomPlateforme=Xbox&produitCategory.categoriesId=3
 
-
-GET http://localhost:3000/products
-
-GET http://localhost:3000/produits
-
-### Create an product
+### Create an produit
 POST http://localhost:3000/produits
+Content-Type: application/json
+Authorization: 1
+{
+    "name": "NeuroNet",
+    "description": "NeuroNet est un jeu de gestion urbaine narratif où vous devez maintenir l'équilibre entre les besoins et les désirs de ses nombreux citoyens, afin de déterminer la destinée d'une ville post-cyberpunk à l'orée d'une nouvelle ère numérique.",
+    "categoriesId": [1,3],
+    "nomPlateforme" : "PC",
+    "taille": "12.4G",
+    "image": "backend/images/neuronet.png",
+    "priceConseille": 16.78
+}
+
+###
+GET http://localhost:3000/alertes
+
+### Create an alerte
+POST http://localhost:3000/alertes
 Content-Type: application/json
 Authorization: 1
 
 {
-    "produitsId": 1,
-    "name": "NeuroNet",
-    "description": "NeuroNet est un jeu de gestion urbaine narratif où vous devez maintenir l'équilibre entre les besoins et les désirs de ses nombreux citoyens, afin de déterminer la destinée d'une ville post-cyberpunk à l'orée d'une nouvelle ère numérique.",
-    "categories": ["1","3"],
-    "nomPlateforme" : "PC",
-    "commentairesId" : ["1","2","3"],
-    "taille": "12.4G",
-    "image": "backend/images/neuronet.png",
-    "priceConseille": "16.78€"
+    "usersId": 1,
+    "productsId": 1,
+    "price": 45,
+    "date": "16/09/24",
+    "status": true
 }
 
 ### Update an article
@@ -31,8 +40,6 @@ Content-Type: application/json
 
 ### Delete an article
 DELETE http://localhost:3000/produits/4
-
------
 
 ### Register
 POST http://localhost:3000/register

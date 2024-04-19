@@ -1,11 +1,13 @@
-<<<<<<< HEAD
+
 const knex = require('knex')(require('./db.js')['development']);
 
 async function createTable() {
   try {
     const exists = await knex.schema.hasTable('poubelles');
-=======
 const knex = require('knex')(require('./db')['development']);
+  
+const knex = require('./db');
+  }
 
 async function createTable() {
   try {
@@ -13,7 +15,7 @@ async function createTable() {
     let exists; 
 
     exists = await knex.schema.hasTable('poubelles');
->>>>>>> bba4b6788c819d1f713a0990121b05e1e7a2e8aa
+
     if (!exists) {
       await knex.schema.createTable('poubelles', table => {
         table.increments('id').primary();
@@ -57,12 +59,10 @@ async function createTable() {
         table.increments('id').primary();
         table.string('name');
         table.string('description');
-        table.string('categoriesId');
         table.string('nomPlateforme');
-        table.string('commentairesId');
         table.string('taille');
         table.string('image'); 
-        table.integer('priceConseille');
+        table.float('priceConseille');
       });
       console.log('La table "produits" a été créée avec succès.');
     } else {
@@ -93,6 +93,16 @@ async function createTable() {
     } else {
       console.log('La table "categories" existe déjà.');
     }
+    exists = await knex.schema.hasTable('produitCategory');
+    if (!exists) {
+      await knex.schema.createTable('produitCategory', table => {
+        table.integer('productsId').references('id').inTable('produits')
+        table.integer('categoriesId').references('id').inTable('categories')
+      });
+      console.log('La table "produitCategory" a été créée avec succès.');
+    } else {
+      console.log('La table "produitCategory" existe déjà.');
+    }
     exists = await knex.schema.hasTable('annonces');
     if (!exists) {
       await knex.schema.createTable('annonces', table => {
@@ -101,7 +111,7 @@ async function createTable() {
         table.integer('vendeursId');
         table.integer('productsId');
         table.integer('date');
-        table.string('lien');
+        table.string('lien'); 
       });
       console.log('La table "annonces" a été créée avec succès.');
     } else {
@@ -256,4 +266,4 @@ async function createTable() {
   }
 }
 
-createTable();
+createTable()

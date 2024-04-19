@@ -3,8 +3,9 @@
 const knex = require('../db');
 
 // Create
-async function createCategories(categoriesId, name, description) {
-  return await knex('categories').insert({categoriesId, name, description});
+async function createCategories(data) {
+  const [id] = await knex('categories').insert(data);
+  return getCategoriesById(id)
 }
 
 // Read
@@ -12,18 +13,18 @@ async function getAllCategories() {
   return await knex.select().from('categories');
 }
 
-async function getCategoriesById(categoriesId) {
-  return await knex('categories').where({categoriesId }).first();
+async function getCategoriesById(id) {
+  return await knex('categories').where({id}).first();
 }
 
 // Update
-async function updateCategories(categoriesId, name, description) {
-  return await knex('categories').where({categoriesId}).update({categoriesId, name, description});
+async function updateCategories(id, name, description) {
+  return await knex('categories').where({id}).update({name, description});
 }
 
 // Delete
-async function deleteCategories(categoriesId) {
-  return await knex('categories').where({ categoriesId }).del();
+async function deleteCategories(id) {
+  return await knex('categories').where({id}).del();
 }
 
 module.exports = {
@@ -34,6 +35,7 @@ module.exports = {
   delete: deleteCategories,
   routePrefix: 'categories'
 };
+
 
 
 // npm install knex sqlite3
