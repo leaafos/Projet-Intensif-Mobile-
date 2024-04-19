@@ -9,6 +9,7 @@ import PC from './pages/PC.jsx';
 import Swipe from './pages/Swipe.jsx';
 import Playstation from './pages/Playstation.jsx';
 import Connexion from './pages/Connexion.jsx';
+import Inscription from './pages/Inscription.jsx';
 
 function Routes () {
     return (
@@ -24,6 +25,7 @@ function Routes () {
                 <Route exact path="/swipe" component={Swipe}/>
                 <Route exact path="/playstation" component={Playstation}/>
                 <Route exact path="/connexion" component={Connexion}/>
+                <Route exact path="/inscritpion" component={Inscription}/>
             </Switch>
         </Router>
     )

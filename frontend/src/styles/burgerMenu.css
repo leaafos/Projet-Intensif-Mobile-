@@ -17,6 +17,7 @@
 .burger-menu-open {
     background-color: #171D25;
     left: 0;
+    opacity: 100%;
 }
 
 .menu-button {
