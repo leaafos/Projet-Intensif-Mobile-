@@ -23,7 +23,7 @@ export default function Inscription() {
     return (
         <div className='body'>
             <div className='header'>
-            <img src={Logo} alt="Logo"></img>
+                <img src={Logo} alt="Logo"></img>
                 <BurgerMenu />
             </div>
             <div className='titre'>

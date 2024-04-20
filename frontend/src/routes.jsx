@@ -32,15 +32,3 @@ function Routes () {
 }
 
 export default Routes;
-
-/*
-export default [
-    {
-        path: "/",
-        element: <App />,
-        children : [
-            { path: "", element: <HomePage />}
-        ]
-
-    }
-]*/
