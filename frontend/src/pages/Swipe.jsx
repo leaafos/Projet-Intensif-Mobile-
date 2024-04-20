@@ -45,13 +45,12 @@ const Swipe= () => {
         };
     };
     
-  
   return (
     <div className='page'>
 
         <div className='header-card'>
             <img src={Logo}></img>  
-            {/*<BurgerMenu />*/}    
+            <BurgerMenu></BurgerMenu>
 
 
         </div>

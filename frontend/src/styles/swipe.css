@@ -3,6 +3,16 @@
     width: 100%;
     z-index: 1001;
 }
+
+.header-card {
+    position: relative;
+}
+
+.header-card img{
+    position: absolute;
+
+}
+
 /* carte 1*/
 
 .card-content-front {
