@@ -12,6 +12,8 @@ import Trophe3 from '../assets/trophe3.png';
 import Background2 from '../assets/background2.png'
 import Background from '../assets/BACKGROUND.png'
 
+const reponse = await fetch("http://localhost:3000/produits");
+const produits = await reponse.json();
 
 const Homepage = () => {
     return (

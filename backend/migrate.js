@@ -1,13 +1,4 @@
-
-const knex = require('knex')(require('./db.js')['development']);
-
-async function createTable() {
-  try {
-    const exists = await knex.schema.hasTable('poubelles');
-const knex = require('knex')(require('./db')['development']);
-  
 const knex = require('./db');
-  }
 
 async function createTable() {
   try {
@@ -15,7 +6,6 @@ async function createTable() {
     let exists; 
 
     exists = await knex.schema.hasTable('poubelles');
-
     if (!exists) {
       await knex.schema.createTable('poubelles', table => {
         table.increments('id').primary();
@@ -266,4 +256,4 @@ async function createTable() {
   }
 }
 
-createTable()
+createTable();
