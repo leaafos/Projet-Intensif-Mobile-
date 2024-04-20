@@ -1,0 +1,51 @@
+.paiement {
+    background-image: url('../assets/background1-alertes.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    overflow-y: auto;
+    padding-bottom: 20px;
+}
+
+.box {
+    height: 100%;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 25px;
+    padding-left: 15px;
+    border-radius: 16px;
+    padding-right: 15px;
+    box-shadow: 0px -2px 4px 0px rgba(10, 30, 175, 0.16);
+}
+
+
+.py-3 {
+    margin-bottom: 10px;;
+}
+
+.champs {
+    position: relative; 
+    top: -70px;
+}
+
+.modesPaiement {
+    margin-bottom: 40px;
+}
+
+.bouton-paiement {
+    background-color: #284BAF;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.md-8 {
+    border: 1px solid red;
+}
+
+.row {
+    margin-top: 5px;
+}
+
+.espace {
+    margin-top: 15px;
+}
