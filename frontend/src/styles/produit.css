@@ -1,5 +1,5 @@
 .produit{
-    color: blue;
+    color: rgb(255, 255, 255);
 }
 
 body{
@@ -8,6 +8,7 @@ body{
     padding: 0;
     width: 100vw;
     height: 100vh;
+    background-color: #171D25;
 }
 
 .header{
@@ -15,12 +16,96 @@ body{
     position: relative;
 }
 
-.titre{
-    color: #FFF;
-    text-shadow: 0px 0px 10.8px rgba(0, 0, 0, 0.72);
+.titreJeu{
+    position: absolute;
+    top: 26%;
+    margin: auto;
+    margin-left: 10%;
     font-family: Lato;
-    font-size: 58px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 700;
-    line-height: 33px;  
+    line-height: 33px;
+}
+
+.categorie1{
+    position: absolute;
+    top: 32%;
+    margin-left: 10%;
+    border-radius: 8px;
+    border: 1px solid var(--Fui-Color-Green-850, #047244);
+    background: var(--Fui-Color-Green-50, #EDFDF6);
+    display: inline-flex;
+    height: var(--Fui-Control-Height-sm, 26px);
+    min-height: var(--Fui-Control-Height-sm, 26px);
+    max-height: var(--Fui-Control-Height-sm, 26px);
+    padding: 0px var(--Fui-Space-sm, 6px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--Fui-Space-xs, 4px);
+    flex-shrink: 0;
+}
+
+.titreCategorie1{
+    color: #047244;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.categorie2{
+    position: absolute;
+    top: 32%;
+    margin-left: 33%;
+    display: inline-flex;
+    height: var(--Fui-Control-Height-sm, 26px);
+    min-height: var(--Fui-Control-Height-sm, 26px);
+    max-height: var(--Fui-Control-Height-sm, 26px);
+    padding: 0px var(--Fui-Space-sm, 6px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--Fui-Space-xs, 4px);
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid #E4B423;
+    background: #FFF6DA;
+}
+
+.titreCategorie2{
+    color: #E4B423;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.unleaving-produit{
+    width: 392px;
+    height: 233px;
+    flex-shrink: 0;
+}
+
+.cloche{
+    position: absolute;
+    top: 27%;
+    margin: auto;
+    margin-left: 80%;
+    color: white;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.favoris{
+    position: absolute;
+    top: 26.3%;
+    margin: auto;
+    margin-left: 90%;
+    color: white;
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
 }
