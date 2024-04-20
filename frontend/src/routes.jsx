@@ -10,6 +10,7 @@ import Favoris from './pages/Favoris.jsx';
 import Inscription from './pages/Inscription.jsx';
 import Alertes from './components/Alertes.jsx';
 import Paiements from './pages/Paiements.jsx';
+import Messages from './pages/Messages.jsx';
 
 function Routes () {
     return (
@@ -26,6 +27,7 @@ function Routes () {
                 <Route exact path="/inscription" component={Inscription}/>
                 <Route exact path="/alertes" component={Alertes}/>
                 <Route exact path="/paiements" component={Paiements}/>
+                <Route exact path="/messages" component={Messages}/>
             </Switch>
         </Router>
     )

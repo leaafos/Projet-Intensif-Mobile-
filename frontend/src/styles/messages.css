@@ -1,0 +1,274 @@
+.messages-page {
+    width: 100%;
+}
+
+.header-messages {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+
+}
+
+.header-messages span {
+    font-size: 22px;
+}
+
+.header-messages img {
+    transform: scale(1.2);
+}
+
+.produit-messages {
+    display: flex;
+    margin-left: 40px;
+    margin-top: 25px;
+    height: 13%;
+}
+
+.vendeur {
+    margin-left: 10px;
+}
+
+.vendeur span {
+    font-size: 18px;
+}
+
+.vendeur p {
+    margin-top: -1px;
+}
+
+.boutons-messages {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    height: 40px;
+    padding-bottom: 25px;
+    border-bottom: 0.5px solid#BEBDBD;
+}
+
+.voir-produit {
+    background-color: transparent;
+    border: 1.5px solid #E4B423;
+    color: #E4B423; 
+    width: 40%;
+    border-radius: 3px;
+    margin-right: 10px;
+    margin-left: -65px;
+}
+
+.acheter-produit {
+    background-color: #E4B423;
+    border-radius: 3px;
+    width: 160%;
+    margin-left: 10px;
+}
+
+/*****
+FIN HEADER
+******/
+
+.conversation {
+    max-height: 58%;
+    background-image: url('../assets/Discussion.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: auto;
+}
+
+.premier-message {
+    margin-top: 20px;
+    width: 53%;
+    background-color: white;
+    margin-left: 30px;
+    padding-left: 10px;
+    border-radius: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.localisation {
+    margin-top: -20px;
+    border: 1px solid white;
+    background-image: url('../assets/IconLoc.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.localisation p {
+    margin-right: 80px;
+    transform: scale(0.8);
+}
+
+.connection {
+    font-size: 8px;
+    color: #616161;
+    margin-top: -30px;
+    background-image: url('../assets/IconTemps.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.connection p {
+    margin-left: -7px;;
+    width: 100%;
+    transform: scale(0.8);
+
+}
+
+
+.premier-message p {
+    color: black;
+    font-size: 14px;
+}
+
+.étoiles {
+    margin-top: -10px;
+}
+
+/*******
+MONSIEUR 
+*****/
+
+.monsieur {
+    margin-left: 40%;
+    transform: scale(0.6);
+    margin-top: -26%;
+}
+
+/*****
+MESSAGE 2-3
+*****/
+
+.message-2 {
+    background-color: #E4B423;
+    width: 60%;
+    height: 30%;
+    margin-left: 30%;
+    margin-top: 70px;
+    padding-left: 10px;
+    border-radius: 10px 10px 0;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.message-3 {
+    background-color: #E4B423;
+    width: 60%;
+    height: 30%;
+    margin-left: 30%;
+    margin-top: 5px;
+    padding-left: 10px;
+    border-radius: 10px 10px 0;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+/*******
+MESSAGES 4-7 
+*******/
+
+.message-4 {
+    background-color: white;
+    width: 50%;
+    margin-top: 10px;;
+    margin-left: 30px;
+    padding-left: 10px;
+    border-radius: 10px 10px 10px 0;
+    padding-top: 0.5px;
+    padding-bottom: 0.5px;
+    color: black;
+}
+
+.message-5 {
+    background-color: white;
+    width: 40%;
+    margin-top: 10px;;
+    margin-left: 30px;
+    padding-left: 10px;
+    border-radius: 10px 10px 10px 0;
+    padding-top: 0.5px;
+    padding-bottom: 0.5px;
+    color: black;
+}
+
+.message-6 {
+    background-color: white;
+    width: 50%;
+    margin-top: 10px;;
+    margin-left: 30px;
+    padding-left: 10px;
+    border-radius: 10px 10px 10px 0;
+    padding-top: 0.5px;
+    padding-bottom: 0.5px;
+    color: black;
+}
+
+.message-7 {
+    background-color: white;
+    width: 50%;
+    margin-top: 10px;;
+    margin-left: 30px;
+    padding-left: 10px;
+    border-radius: 10px 10px 10px 0;
+    padding-top: 0.5px;
+    padding-bottom: 0.5px;
+    color: black;
+}
+
+/********
+MESSAGES 8-9
+
+*******/
+
+.message-8 {
+    background-color: #E4B423;
+    width: 40%;
+    height: 30%;
+    margin-left: 50%;
+    margin-top: 5px;
+    padding-left: 10px;
+    border-radius: 10px 10px 0;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.message-9 {
+    background-color: #E4B423;
+    width: 61%;
+    height: 30%;
+    margin-left: 30%;
+    margin-top: 5px;
+    padding-left: 10px;
+    border-radius: 10px 10px 0;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-bottom: 30px;
+}
+
+
+/*******
+
+ECRIRE UN MESSAGE 
+
+******/
+.ecrire-message {
+    height: 8%;
+    background-color: #181E26;
+    margin-top: 15px;
+}
+
+.ecrire-message textarea {
+    width: 75%;
+    max-height: 20px;
+    margin-left: 50px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    background-image: url('../assets/fleche-droite.svg');
+    background-repeat: no-repeat;
+    background-position: right 20px top 10px;
+    background-color: white;
+    border-radius: 3px;
+    color: rgba(0, 0, 0, 0.6);
+}

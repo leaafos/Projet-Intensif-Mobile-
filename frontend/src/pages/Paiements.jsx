@@ -134,7 +134,7 @@ export default function Paiements() {
                         labelClass="champs"
                       />
                     </MDBCol>
-                    <MDBCol className="espace">
+                    <MDBCol className="espaceS">
                       <MDBInput
                         label="CVV"
                         id="form8"
@@ -160,7 +160,7 @@ export default function Paiements() {
                   <MDBListGroup flush>
                     <MDBListGroupItem className="d-flex justify-content-between align-items-center border-0 px-0 pb-0">
                       Produit :
-                      <span> 16,78€</span>
+                      <span> 6,50€</span>
                     </MDBListGroupItem>
                     <MDBListGroupItem className="d-flex justify-content-between align-items-center border-0 px-0 pb-0">
                       Livraison : 
@@ -175,7 +175,7 @@ export default function Paiements() {
                         </strong>
                       </div>
                       <span>
-                        <strong>16,78€</strong>
+                        <strong>6,50€</strong>
                       </span>
                     </MDBListGroupItem>
                   </MDBListGroup>

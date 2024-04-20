@@ -49,6 +49,12 @@
 .espace {
     margin-top: 15px;
 }
+
 .espacePrénom {
     margin-top: 40px;
+}
+
+.espaceS {
+    width: 20%;
+    margin-top: 15px;
 }
