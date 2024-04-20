@@ -28,7 +28,7 @@ export default function Paiements() {
                 </MDBCardHeader>
                 <MDBCardBody>
                   <MDBRow className="mb-4">
-                    <MDBCol className="espace">
+                    <MDBCol className="espacePrénom">
                       <MDBInput 
                       label="Prénom" 
                       id="form1" 
@@ -144,9 +144,9 @@ export default function Paiements() {
                     </MDBCol>
                   </MDBRow>
 
-                  <MDBBtn className="bouton-paiement">
+                  <button className="bouton-paiement">
                     Procéder à l'achat
-                  </MDBBtn>
+                  </button>
                 </MDBCardBody>
               </MDBCard>
             </MDBCol>
