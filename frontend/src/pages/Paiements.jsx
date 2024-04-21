@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import {
   MDBCard,
   MDBCardBody,
@@ -16,6 +17,7 @@ import {
 import '../styles/paiements.css';
 
 export default function Paiements() {
+
   return (
     <div className="paiement">
       <div className="box">
@@ -34,6 +36,8 @@ export default function Paiements() {
                       id="form1" 
                       type="text"
                       labelClass="champs" 
+                     
+                      required
                       />
                     </MDBCol>
 
@@ -42,6 +46,8 @@ export default function Paiements() {
                       id="form2" 
                       type="text"
                       labelClass="champs" 
+                      
+                      required
                       />
                     </MDBCol>
                   </MDBRow>
@@ -52,6 +58,8 @@ export default function Paiements() {
                       id="form3"
                       type="text"
                       labelClass="champs"
+
+                      required
                     />
                     </MDBCol>
                     <MDBCol className="espace">
@@ -60,6 +68,8 @@ export default function Paiements() {
                       id="form4"
                       type="text"
                       labelClass="champs"
+                    
+                      required
                     />
                     </MDBCol>
                     <MDBCol className="espace">
@@ -68,6 +78,8 @@ export default function Paiements() {
                       id="form5"
                       type="text"
                       labelClass="champs"
+                    
+                      required
                     />
                     </MDBCol>
 
@@ -91,7 +103,7 @@ export default function Paiements() {
                     name="flexRadioDefault"
                     id="flexRadioDefault1"
                     label="Carte Bancaire"
-                    checked
+                    defaultChecked
                     />
 
                     <MDBRadio
@@ -114,6 +126,7 @@ export default function Paiements() {
                         id="form6"
                         type="text"
                         labelClass="champs"
+                        required
                       />
                     </MDBCol>
                     <MDBCol className="espace">
@@ -122,6 +135,7 @@ export default function Paiements() {
                         id="form7"
                         type="text"
                         labelClass="champs"
+                        required
                       />
                     </MDBCol>
                   </MDBRow>
@@ -132,6 +146,7 @@ export default function Paiements() {
                         id="form8"
                         type="text"
                         labelClass="champs"
+                        required
                       />
                     </MDBCol>
                     <MDBCol className="espaceS">
@@ -140,16 +155,23 @@ export default function Paiements() {
                         id="form8"
                         type="text"
                         labelClass="champs"
+                        required
                       />
                     </MDBCol>
-                  </MDBRow>
 
-                  <button className="bouton-paiement">
-                    Procéder à l'achat
-                  </button>
+
+                  </MDBRow>
+                  <Link to="/overlay">
+                    <button className="bouton-paiement">
+                       Procéder à l'achat
+                    </button>
+                  </Link>
+                  
+
                 </MDBCardBody>
               </MDBCard>
             </MDBCol>
+
 
             <MDBCol md="4" className="mb-4">
               <MDBCard className="mb-4">
@@ -157,7 +179,7 @@ export default function Paiements() {
                   <h3 className="mb-0">Détail de la commande</h3>
                 </MDBCardHeader>
                 <MDBCardBody>
-                  <MDBListGroup flush>
+                  <MDBListGroup flush="true">
                     <MDBListGroupItem className="d-flex justify-content-between align-items-center border-0 px-0 pb-0">
                       Produit :
                       <span> 6,50€</span>

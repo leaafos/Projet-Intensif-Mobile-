@@ -33,7 +33,7 @@
 }
 
 .bouton-paiement {
-    background-color: #284BAF;
+    background-color: #DB850B;
     width: 100%;
     border-radius: 50px;
 }
@@ -56,5 +56,7 @@
 
 .espaceS {
     width: 20%;
+    display: flex;
     margin-top: 15px;
 }
+

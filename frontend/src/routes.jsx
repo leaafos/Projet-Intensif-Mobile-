@@ -11,6 +11,7 @@ import Inscription from './pages/Inscription.jsx';
 import Alertes from './components/Alertes.jsx';
 import Paiements from './pages/Paiements.jsx';
 import Messages from './pages/Messages.jsx';
+import Overlay from './components/OverlayPaiement.jsx';
 
 function Routes () {
     return (
@@ -28,6 +29,7 @@ function Routes () {
                 <Route exact path="/alertes" component={Alertes}/>
                 <Route exact path="/paiements" component={Paiements}/>
                 <Route exact path="/messages" component={Messages}/>
+                <Route exact path="/overlay" component={Overlay}/>
             </Switch>
         </Router>
     )
