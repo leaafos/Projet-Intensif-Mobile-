@@ -1,0 +1,546 @@
+.produit-container {
+    height: 100vh; /* La hauteur visible de l'écran */
+    overflow-y: auto; /* Permet le défilement vertical */
+    background-image: url('../assets/unleaving-produit.png');
+    color: white;
+  }
+  
+  .produit-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .produit-logo {
+    width: 137px; /* Ajustez selon votre besoin */
+  }
+  
+  .produit-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .produit-cloche{
+    width: 20px; 
+    margin-top: 122%;
+    margin-left: 180%;
+    color: white;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;/* Ajustez selon votre besoin */
+  }
+
+  .produit-favoris{
+    width: 30px; 
+    margin-top: 105%;
+    color: white;
+    flex-shrink: 0;/* Ajustez selon votre besoin */
+  }
+  
+  .produit-content {
+    padding: 20px; /* Ajout d'une marge intérieure pour un espacement agréable */
+    background: var(--Bleu-dgrad, linear-gradient(168deg, #171D25 63.68%, #284BAF 144.2%));
+  }
+  
+  .produit-title-section {
+    text-align: left; /* Centrer le titre */
+    display: flex;
+  }
+  
+  .produit-titreJeu {
+    margin-left: 5%;
+    margin-top: 18%;
+    margin-bottom: 0%;
+    font-family: Lato;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 33px;
+  }
+  
+  .produit-categories {
+    display: flex;
+    margin-left: 5%;
+    padding: 10px 0;
+  }
+  
+  .produit-categorie1 {
+    border: 1px solid #047244; /* Ajustez selon la catégorie */
+    background: #EDFDF6;
+    padding: 5px;
+    border-radius: 8px;
+    display: inline-flex;
+    height: var(--Fui-Control-Height-sm, 26px);
+    min-height: var(--Fui-Control-Height-sm, 26px);
+    max-height: var(--Fui-Control-Height-sm, 26px);
+    padding: 0px var(--Fui-Space-sm, 6px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--Fui-Space-xs, 4px);
+    flex-shrink: 0;
+  }
+  
+  
+  .produit-titreCategorie1 {
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    color: #047244;
+  }
+
+  .produit-categorie2 {
+    border: 1px solid #E4B423;
+    background: #FFF6DA;
+    padding: 5px;
+    border-radius: 8px;
+    margin-left: 4%;
+    display: inline-flex;
+    height: var(--Fui-Control-Height-sm, 26px);
+    min-height: var(--Fui-Control-Height-sm, 26px);
+    max-height: var(--Fui-Control-Height-sm, 26px);
+    padding: 0px var(--Fui-Space-sm, 6px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--Fui-Space-xs, 4px);
+    flex-shrink: 0;
+  }
+
+  .produit-titreCategorie2 {
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    color: #E4B423;
+  }
+  
+  .produit-info {
+    display: flex;
+  }
+
+  .produit-texte1{
+    margin-left: 5%;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+  }
+  
+  .produit-icondev {
+    width: 19px; /* Ajustez selon votre besoin */
+    height: 19px;
+    margin-left: 2%;
+  }
+
+  .produit-texte2{
+    margin-left: 5%;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+  }
+  
+  .produit-texte3{
+    margin-left: 5%;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+  }
+
+  .produit-texte4{
+    margin-top: 10%;
+    margin-left: 5%;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+  }
+
+  .prix{
+    margin-top: 7%;
+    color: var(--Fui-Color-Blue-300, #91ACFD);
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  .produit-texte5{
+    margin-left: 5%;
+    margin-top: 1%;
+    font-family: Lato;
+    font-size: 9.697px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15.238px;
+  }
+
+  .ligne1{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+  }
+
+  .produit-separation {
+    margin-left: 5%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.15);
+    margin-top: 20px; /* Un espacement entre les sections */
+  }
+
+  .produit-separation1{
+    margin-left: 5%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.15);
+    margin-top: 1%;
+  }
+  
+  .produit-prix-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .produit-offres {
+    margin-left: 2%;
+  }
+  
+  .produit-texte6{
+    margin-top: 5%;
+    margin-left: 5%;
+    color: var(--Fui-Color-Blue-300, #91ACFD);
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .produit-texte7{
+    margin-left: 4%;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .produit-texte8{
+    margin-left: 4%;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .produit-texte9{
+    margin-left: 4%;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .produit-texte10{
+    margin-left: 5%;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 24px;
+  }
+
+  .produit-texte11{
+    margin-left: 5%;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .produit-texte12{
+    width: 50%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column; /* pour garantir que les éléments sont en colonne */
+    align-items: flex-start;
+    font-family: Lato;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 15px;
+  }
+
+  .produit-texte13{
+    margin-left: 19%;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .produit-texte14{
+    width: 50%;
+    margin-left: 6%;
+    display: flex;
+    flex-direction: column; /* pour garantir que les éléments sont en colonne */
+    align-items: flex-start;
+    font-family: Lato;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 15px;
+  }
+
+  .video{
+    display: flex;
+  }
+
+  .produit-texte15{
+    display: flex;
+    flex-direction: column; /* pour garantir que les éléments sont en colonne */
+    align-items: flex-start;
+    margin-left: 5%;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    
+  }
+
+  .produit-texte16{
+    display: flex;
+    flex-direction: column; /* pour garantir que les éléments sont en colonne */
+    align-items: flex-start;
+    margin-left: 5%;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .ligne{
+    margin-left: 5%;
+    width: 92.011px;
+    height: 2px;
+    background: #91ACFD;
+  }
+
+  .produit-jeu1 {
+    margin-top: 2%;
+    margin-left: 5%;
+    width: 157px;
+    height: 87.633px;
+    flex-shrink: 0;
+  }
+
+  .produit-jeu2 {
+    margin-top: 2%;
+    margin-left: 5%;
+    width: 157px;
+    height: 87.633px;
+    flex-shrink: 0;
+  }
+  
+  .produit-description {
+    margin-top: 12%;
+  }
+
+  .produit-description1 {
+    margin-top: 8%;
+  }
+
+  .produit-texte17{
+    display: flex;
+    flex-direction: column; /* pour garantir que les éléments sont en colonne */
+    align-items: flex-start;
+    margin-left: 5%;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  .sous-separation{
+    margin-top: 3%;
+  }
+
+  .sous-separation1{
+    margin-top: 5%;
+  }
+
+  .produit-texte18{
+    margin-left: 5%;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .liste-photo{
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .produit-texte19{
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  .bouton{
+    margin-top: 10%;
+    width: 56%;
+    margin-left: 5%;
+    border-radius: 7px;
+    background: var(--Fui-Color-Blue-300, #91ACFD);
+    display: inline-flex;
+    padding: 10px 68px 8px 68px;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+  }
+
+  .produit-texte20{
+    margin-left: 5%;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .texte1{
+    margin-top: 8%;
+  }
+
+  .texte2{
+    margin-top: 3%;
+  }
+
+  .bloc-prix{
+    margin-top: 2%;
+    margin-left: 20%;
+    display: inline-flex;
+    height: var(--Fui-Control-Height-lg, 44px);
+    min-width: 44px;
+    min-height: var(--Fui-Control-Height-lg, 44px);
+    max-height: var(--Fui-Control-Height-lg, 44px);
+    padding: 0px var(--Fui-Space-xlg, 16px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--Fui-Space-sm, 6px);
+    flex-shrink: 0;
+    border-radius: var(--Fui-Radius-lg, 8px);
+    background: #91ACFD;
+  }
+
+  .prix2{
+    font-family: Lato;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 33px;
+  }
+
+  .produit-texte21{
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+  }
+
+  .produit-texte22{
+    color: var(--Fui-Color-Blue-300, #91ACFD);
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .ligne2{
+    margin-left: 5%;
+    display: flex;
+  }
+
+  .dev{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dev1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-left: 4%;
+  }
+
+  .devkin{
+    display: flex;
+  }
+
+  .prixorange{
+    display: inline-flex;
+    height: 26px;
+    min-width: 26px;
+    min-height: 26px;
+    max-height: 26px;
+    padding: 0px var(--Fui-Space-md, 8px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--Fui-Space-xs, 4px);
+    flex-shrink: 0;
+    border-radius: var(--Fui-Radius-md, 6px);
+    background: var(--Fui-Color-Brown-700, #DB850B);
+  }
+
+  .unleavingphoto{
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  .titredev{
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .note{
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .titreprix{
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+  }

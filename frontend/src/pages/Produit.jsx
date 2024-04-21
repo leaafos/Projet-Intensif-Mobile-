@@ -20,6 +20,20 @@ import unleaving3 from '../assets/unleaving3.png';
 import unleaving4 from '../assets/unleaving4.png';
 import iconAlerte from '../assets/iconAlerte.svg';
 import shopping from '../assets/shopping.svg';
+import kinguin from '../assets/kinguin.png';
+import star from '../assets/star.svg';
+import greenman from '../assets/greenman.png';
+import g2a from '../assets/g2a.png'; 
+import yuplay from '../assets/yuplay.png';
+import instantgaming from '../assets/instantgaming.png';
+import furiko from '../assets/furiko.png';
+import gamesplanet from '../assets/gamesplanet.svg';
+import steam from '../assets/steam1.png'
+import epicgames from '../assets/epicgames.png'
+import A from '../assets/A.png'
+import C from '../assets/C.png'
+import N from '../assets/N.png'
+import unleavingphoto from '../assets/unleavingphoto.png';
 
 export default function Produit() {
     return (
@@ -161,10 +175,8 @@ export default function Produit() {
                 <div className="produit-description1">
                     <span className="produit-texte18">Galerie</span>
                 </div>
-                <div>
-                    <video width="50%" controls>
-                        <source src="/video/unleaving-video.mp4" type="video/mp4"/>
-                    </video>
+                <div className="unleavingphoto">
+                    <img src={unleavingphoto}></img>
                 </div>
                 <div className="liste-photo">
                     <img src={unleaving1}></img>
@@ -191,7 +203,201 @@ export default function Produit() {
                         <img src={shopping}></img>
                      </div>
                 </div>
-                
+                <div className="dev1">
+                    <div className="devkin">
+                        <img src={kinguin}></img>
+                        <div className="dev">
+                            <span className="titredev">Kinguin</span>
+                            <div>
+                                <img src={star}></img>
+                                <span className="note">4,6</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="prixorange">
+                        <span className="titreprix">3,99€</span>
+                        <img src={shopping}></img>
+                    </div>
+                </div>
+                <div className="dev1">
+                    <div className="devkin">
+                        <img src={greenman}></img>
+                        <div className="dev">
+                            <span className="titredev">Greenman Gaming</span>
+                            <div>
+                                <img src={star}></img>
+                                <span className="note">4,1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="prixorange">
+                        <span className="titreprix">5,60€</span>
+                        <img src={shopping}></img>
+                    </div>
+                </div>
+                <div className="dev1">
+                    <div className="devkin">
+                        <img src={g2a}></img>
+                        <div className="dev">
+                            <span className="titredev">G2A</span>
+                            <div>
+                                <img src={star}></img>
+                                <span className="note">4,6</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="prixorange">
+                        <span className="titreprix">9,42€</span>
+                        <img src={shopping}></img>
+                    </div>
+                </div>
+                <div className="dev1">
+                    <div className="devkin">
+                        <img src={yuplay}></img>
+                        <div className="dev">
+                            <span className="titredev">Yuplay</span>
+                            <div>
+                                <img src={star}></img>
+                                <span className="note">4,6</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="prixorange">
+                        <span className="titreprix">11,78€</span>
+                        <img src={shopping}></img>
+                    </div>
+                </div>
+                <div className="dev1">
+                    <div className="devkin">
+                        <img src={instantgaming}></img>
+                        <div className="dev">
+                            <span className="titredev">Instant Gaming</span>
+                            <div>
+                                <img src={star}></img>
+                                <span className="note">4,6</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="prixorange">
+                        <span className="titreprix">12,25€</span>
+                        <img src={shopping}></img>
+                    </div>
+                </div>
+                <div className="dev1">
+                    <div className="devkin">
+                        <img src={furiko}></img>
+                        <div className="dev">
+                            <span className="titredev">Furiko</span>
+                            <div>
+                                <img src={star}></img>
+                                <span className="note">4,6</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="prixorange">
+                        <span className="titreprix">15,78€</span>
+                        <img src={shopping}></img>
+                    </div>
+                </div>
+                <div className="dev1">
+                    <div className="devkin">
+                        <img src={gamesplanet}></img>
+                        <div className="dev">
+                            <span className="titredev">Gamesplanet</span>
+                            <div>
+                                <img src={star}></img>
+                                <span className="note">4,6</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="prixorange">
+                        <span className="titreprix">15,78€</span>
+                        <img src={shopping}></img>
+                    </div>
+                </div>
+                <div className="dev1">
+                    <div className="devkin">
+                        <img src={steam}></img>
+                        <div className="dev">
+                            <span className="titredev">Steam</span>
+                            <div>
+                                <img src={star}></img>
+                                <span className="note">4,6</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="prixorange">
+                        <span className="titreprix">16,00€</span>
+                        <img src={shopping}></img>
+                    </div>
+                </div>
+                <div className="dev1">
+                    <div className="devkin">
+                        <img src={epicgames}></img>
+                        <div className="dev">
+                            <span className="titredev">Epic Games</span>
+                            <div>
+                                <img src={star}></img>
+                                <span className="note">4,6</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="prixorange">
+                        <span className="titreprix">16,50€</span>
+                        <img src={shopping}></img>
+                    </div>
+                </div>
+                <div className="texte1">
+                    <span className="produit-texte20">Prix d'occasion</span>
+                </div>
+                <div className="dev1">
+                    <div className="devkin">
+                        <img src={A}></img>
+                        <div className="dev">
+                            <span className="titredev">artugaming724</span>
+                            <div>
+                                <img src={star}></img>
+                                <span className="note">4,6</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="prixorange">
+                        <span className="titreprix">6,50€</span>
+                        <img src={shopping}></img>
+                    </div>
+                </div>
+                <div className="dev1">
+                    <div className="devkin">
+                        <img src={C}></img>
+                        <div className="dev">
+                            <span className="titredev">cedricolino</span>
+                            <div>
+                                <img src={star}></img>
+                                <span className="note">4,6</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="prixorange">
+                        <span className="titreprix">9,70€</span>
+                        <img src={shopping}></img>
+                    </div>
+                </div>
+                <div className="dev1">
+                    <div className="devkin">
+                        <img src={N}></img>
+                        <div className="dev">
+                            <span className="titredev">cedricolino</span>
+                            <div>
+                                <img src={star}></img>
+                                <span className="note">4,6</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="prixorange">
+                        <span className="titreprix">9,99€</span>
+                        <img src={shopping}></img>
+                    </div>
+                </div>
             </div>
         </div>
     );

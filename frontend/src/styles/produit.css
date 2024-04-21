@@ -1,7 +1,7 @@
 .produit-container {
     height: 100vh; /* La hauteur visible de l'écran */
     overflow-y: auto; /* Permet le défilement vertical */
-    background-color: #171D25; /* Conserver la couleur de fond */
+    background-image: url('../assets/unleaving-produit.png');
     color: white;
   }
   
@@ -480,4 +480,64 @@
   .ligne2{
     margin-left: 5%;
     display: flex;
+  }
+
+  .dev{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dev1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-left: 4%;
+  }
+
+  .devkin{
+    display: flex;
+  }
+
+  .prixorange{
+    display: inline-flex;
+    height: 26px;
+    min-width: 26px;
+    min-height: 26px;
+    max-height: 26px;
+    padding: 0px var(--Fui-Space-md, 8px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--Fui-Space-xs, 4px);
+    flex-shrink: 0;
+    border-radius: var(--Fui-Radius-md, 6px);
+    background: var(--Fui-Color-Brown-700, #DB850B);
+  }
+
+  .unleavingphoto{
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  .titredev{
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .note{
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .titreprix{
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
   }

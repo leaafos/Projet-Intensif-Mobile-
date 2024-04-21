@@ -11,6 +11,7 @@ import Inscription from './pages/Inscription.jsx';
 import Alertes from './components/Alertes.jsx';
 import Paiements from './pages/Paiements.jsx';
 import Messages from './pages/Messages.jsx';
+import produit2 from './pages/produit2.jsx';
 
 function Routes () {
     return (
@@ -18,6 +19,7 @@ function Routes () {
             <Switch>
                 <Route exact path="/" component={HomePage}/>
                 <Route exact path="/produit" component={Produit}/>
+                <Route exact path="/produit2" component={produit2}/>
                 <Route exact path="/annonces" component={Annonces}/>
                 <Route exact path="/menu" component={BurgerMenu}/>
                 <Route exact path="/" component={Platform}/>
