@@ -1,7 +1,7 @@
 .produit-container {
     height: 100vh; /* La hauteur visible de l'écran */
     overflow-y: auto; /* Permet le défilement vertical */
-    background-image: url('../assets/unleaving-produit.png');
+    background-image: url('../assets/neuronet-produit.png');
     color: white;
   }
   
