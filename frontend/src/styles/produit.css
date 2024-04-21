@@ -206,6 +206,7 @@
   }
   
   .produit-texte6{
+    margin-top: 5%;
     margin-left: 5%;
     color: var(--Fui-Color-Blue-300, #91ACFD);
     font-family: Lato;
@@ -244,13 +245,45 @@
 
   .produit-texte10{
     margin-left: 5%;
-    -webkit-text-stroke-width: 0.4000000059604645;
-    -webkit-text-stroke-color: #FFF;
     font-family: Lato;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
+  }
+
+  .produit-texte11{
+    margin-left: 8%;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .produit-texte12{
+    font-family: Lato;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 15px;
+  }
+
+  .produit-texte13{
+    margin-left: 10%;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .produit-texte14{
+    font-family: Lato;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 15px;
   }
 
   .ligne{
@@ -260,17 +293,20 @@
     background: #91ACFD;
   }
 
-  .produit-jeu {
-    width: 100px; /* Ajustez selon votre besoin */
-    margin: 10px; /* Ajout d'un peu d'espace */
+  .produit-jeu1 {
+    margin-top: 6%;
+    margin-left: 8%;
+    width: 157px;
+    height: 87.633px;
+    flex-shrink: 0;
   }
-  
-  .produit-review {
-    text-align: center; /* Pour centrer le texte */
-  }
-  
-  .produit-temoignages {
-    padding: 10px 0;
+
+  .produit-jeu2 {
+    margin-top: 6%;
+    margin-left: 2%;
+    width: 157px;
+    height: 87.633px;
+    flex-shrink: 0;
   }
   
   .produit-description {

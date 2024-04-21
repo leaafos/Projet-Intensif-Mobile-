@@ -80,15 +80,15 @@ export default function Produit() {
                 <div className="ligne"></div>
                 <span className="produit-texte10">ILS PARLENT DE NOUS</span>
                 <div className="produit-review">
-                    <img src={jeu1} alt="Jeu 1" className="produit-jeu" />
-                    <img src={jeu2} alt="Jeu 2" className="produit-jeu" />
+                    <img src={jeu1} alt="Jeu 1" className="produit-jeu1" />
+                    <img src={jeu2} alt="Jeu 2" className="produit-jeu2" />
                 </div>
 
-                <div className="produit-temoignages">
-                    <span className="produit-texte">@2santos.amelya</span>
-                    <span className="produit-texte">“Une exploration des recoins obscurs de l'esprit humain à travers des énigmes stimulantes.”</span>
-                    <span className="produit-texte">@talmo.primesupreme</span>
-                    <span className="produit-texte">“Un monde surréaliste rendu vivant par des œuvres d'art peintes à la main.”</span>
+                <div>
+                    <span className="produit-texte11">@2santos.amelya</span>
+                    <span className="produit-texte12">“Une exploration des recoins obscurs de l'esprit humain à travers des énigmes stimulantes.”</span>
+                    <span className="produit-texte13">@talmo.primesupreme</span>
+                    <span className="produit-texte14">“Un monde surréaliste rendu vivant par des œuvres d'art peintes à la main.”</span>
                 </div>
 
                 <div className="produit-description">
