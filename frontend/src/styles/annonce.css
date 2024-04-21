@@ -1,0 +1,220 @@
+.annonce {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    overflow-y: auto;
+    z-index: 0;
+}
+
+.header-annonce {
+    position: absolute; 
+    width: 85%;
+    height: 8vh;;
+    background-image: url('../assets/IconFleche.svg'), url('../assets/infos.svg');
+    background-repeat: no-repeat;
+    background-position: left, right;
+    z-index: 1;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.head {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-image: url('../assets/jeu.png');
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+.banderole {
+    background-color: #E4B423;
+    margin-top: 106%;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.profil-artu {
+    height: 82px;
+    border-bottom: 1px solid white;
+    display: flex;
+}
+
+.profil-artu h1 {
+    font-size: 28px;
+    background-image: url('../assets/Rond.svg');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 20px;
+    color: black;
+    padding-left: 18px;
+    font-weight: 400;
+    padding-top: 10px;
+    width: 50px;
+}
+
+.profil-artu p {
+    font-size: 18px;
+}
+
+.etoiles {
+    margin-top: -15px;
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+}
+
+
+
+.bouton-annonce button {
+    border-radius: 3px;
+    border: 2px solid #E4B423;
+    background: #FFF;
+    color:#E4B423;
+    margin-top: 20px;
+    margin-left: 75px;
+    height: 30px;
+    padding-bottom: 15%;
+    padding-top: 5px;
+}
+
+
+.jeu {
+    height: 90px;
+    border: 1px solid white;
+}
+
+.jeu h2{
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-left: 25px;
+}
+
+.prix-jeu {
+    margin-top: -20px;
+}
+
+.prix-jeu-txt{ 
+    margin-left: 25px;
+}
+
+.neuf {
+    margin-top: -40px;
+    margin-left: 75px;
+}
+
+.description {
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.gris {
+    font-size: 13px;
+    font-weight: 400;
+    color: #BDBFC7;
+}
+
+.normal {
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.jaune {
+    font-size: 13px;
+    font-weight: 400;
+    color: #E4B423;
+    text-decoration: underline;
+    margin-top: -33px;
+    margin-left: 145px;
+}
+
+.offre {
+    box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.50);
+}
+
+.frais {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 45px;
+}
+
+.gratos {
+    color:#E4B423;
+    font-size: 11px;
+    margin-top: 20px;
+}
+
+.offre button {
+    background-color: #E4B423;
+    width: 40%;
+    border-radius: 3px;
+    height: 35px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+}
+
+.faire-une-offre {
+    margin-left: 25px;
+}
+
+.acheter {
+    margin-left: 20px;
+}
+
+.section {
+    box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.50);
+    padding-bottom: 15px;
+}
+
+.derniere-section {
+    margin-top: 40px;
+    margin-left: 25px;
+    margin-right: 20px;
+}
+
+.par1 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.jaune-par1 {
+    color:#E4B423;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: -33px;
+    margin-left: 208px;
+    text-decoration: underline;
+}
+
+.par2 {
+    margin-bottom: 15px;
+    
+}
+
+.jaune-par2 {
+    color:#E4B423;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: -33px;
+    margin-left: 255px;
+    text-decoration: underline;
+}
+
+.jaune-par2-2 {
+    color:#E4B423;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: -10px;
+    margin-left: 0px;
+    text-decoration: underline;
+}
+
+.espace-libre {
+    margin-top: 60px;
+}

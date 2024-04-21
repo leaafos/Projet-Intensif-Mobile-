@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import HomePage from "./pages/HomePage.jsx";
 import Produit from './pages/Produit.jsx';
-import Annonces from './pages/ListeAnnonces.jsx';
+import Annonces from './pages/Annonce.jsx';
 import BurgerMenu from './components/BurgerMenu.jsx';
 import Platform from './pages/Nintendo.jsx';
 import Swipe from './pages/Swipe.jsx';

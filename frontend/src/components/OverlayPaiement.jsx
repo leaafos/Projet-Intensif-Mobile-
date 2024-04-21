@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles/overlay.css';
-import Check from '../assets/check-paiement.svg'
+import Check from '../assets/check-paiement.svg';
+import { Link } from 'react-router-dom';
 
 
 export default function Overlay() {
@@ -16,7 +17,10 @@ export default function Overlay() {
            <img src={Check}></img>
 
           <div className="bouton">
-            <button >Menu</button>
+            <Link to="/">
+               <button >Menu</button>
+            </Link>
+           
           </div>
           
         </div>
