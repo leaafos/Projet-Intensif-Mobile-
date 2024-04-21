@@ -1,40 +1,74 @@
-.produit{
-    color: rgb(255, 255, 255);
-}
+.produit-container {
+    height: 100vh; /* La hauteur visible de l'écran */
+    overflow-y: auto; /* Permet le défilement vertical */
+    background-color: #171D25; /* Conserver la couleur de fond */
+    color: white;
+  }
+  
+  .produit-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .produit-logo {
+    width: 137px; /* Ajustez selon votre besoin */
+  }
+  
+  .produit-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .produit-cloche{
+    width: 20px; 
+    margin-top: 122%;
+    margin-left: 180%;
+    color: white;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;/* Ajustez selon votre besoin */
+  }
 
-body{
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #171D25;
-}
-
-.header{
-    z-index:1000;
-    position: relative;
-}
-
-.titreJeu{
-    position: absolute;
-    top: 26%;
-    margin: auto;
-    margin-left: 10%;
+  .produit-favoris{
+    width: 30px; 
+    margin-top: 105%;
+    color: white;
+    flex-shrink: 0;/* Ajustez selon votre besoin */
+  }
+  
+  .produit-content {
+    padding: 20px; /* Ajout d'une marge intérieure pour un espacement agréable */
+  }
+  
+  .produit-title-section {
+    text-align: left; /* Centrer le titre */
+    display: flex;
+  }
+  
+  .produit-titreJeu {
+    margin-left: 5%;
+    margin-top: 18%;
+    margin-bottom: 0%;
     font-family: Lato;
     font-size: 28px;
     font-style: normal;
     font-weight: 700;
     line-height: 33px;
-}
-
-.categorie1{
-    position: absolute;
-    top: 32%;
-    margin-left: 10%;
+  }
+  
+  .produit-categories {
+    display: flex;
+    margin-left: 5%;
+    padding: 10px 0;
+  }
+  
+  .produit-categorie1 {
+    border: 1px solid #047244; /* Ajustez selon la catégorie */
+    background: #EDFDF6;
+    padding: 5px;
     border-radius: 8px;
-    border: 1px solid var(--Fui-Color-Green-850, #047244);
-    background: var(--Fui-Color-Green-50, #EDFDF6);
     display: inline-flex;
     height: var(--Fui-Control-Height-sm, 26px);
     min-height: var(--Fui-Control-Height-sm, 26px);
@@ -44,403 +78,201 @@ body{
     align-items: center;
     gap: var(--Fui-Space-xs, 4px);
     flex-shrink: 0;
-}
-
-.titreCategorie1{
-    color: #047244;
+  }
+  
+  
+  .produit-titreCategorie1 {
     font-family: Lato;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
-}
+    color: #047244;
+  }
 
-.categorie2{
-    position: absolute;
-    top: 32%;
-    margin-left: 33%;
-    display: inline-flex;
-    height: var(--Fui-Control-Height-sm, 26px);
-    min-height: var(--Fui-Control-Height-sm, 26px);
-    max-height: var(--Fui-Control-Height-sm, 26px);
-    padding: 0px var(--Fui-Space-sm, 6px);
-    justify-content: center;
-    align-items: center;
-    gap: var(--Fui-Space-xs, 4px);
-    flex-shrink: 0;
-    border-radius: 8px;
+  .produit-categorie2 {
     border: 1px solid #E4B423;
     background: #FFF6DA;
-}
+    padding: 5px;
+    border-radius: 8px;
+    margin-left: 4%;
+    display: inline-flex;
+    height: var(--Fui-Control-Height-sm, 26px);
+    min-height: var(--Fui-Control-Height-sm, 26px);
+    max-height: var(--Fui-Control-Height-sm, 26px);
+    padding: 0px var(--Fui-Space-sm, 6px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--Fui-Space-xs, 4px);
+    flex-shrink: 0;
+  }
 
-.titreCategorie2{
-    color: #E4B423;
+  .produit-titreCategorie2 {
     font-family: Lato;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
-}
+    color: #E4B423;
+  }
+  
+  .produit-info {
+    display: flex;
+  }
 
-.unleaving-produit{
-    width: 392px;
-    height: 233px;
-    flex-shrink: 0;
-}
-
-.cloche{
-    position: absolute;
-    top: 27%;
-    margin: auto;
-    margin-left: 80%;
-    color: white;
-    width: 18px;
-    height: 18px;
-    flex-shrink: 0;
-}
-
-.favoris{
-    position: absolute;
-    top: 26.3%;
-    margin: auto;
-    margin-left: 90%;
-    color: white;
-    width: 28px;
-    height: 28px;
-    flex-shrink: 0;
-}
-
-.texte1{
-    position: absolute;
-    top: 38%;
-    margin: auto;
-    margin-left: 10%;
-    font-family: Lato;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px
-}
-
-.texte2{
-    position: absolute;
-    top: 38%;
-    margin: auto;
-    margin-left: 34%;
+  .produit-texte1{
+    margin-left: 5%;
     font-family: Lato;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 22px;
-    text-decoration-line: underline;
-    cursor: pointer;
-}
+    line-height: 22px; /* 157.143% */
+  }
+  
+  .produit-icondev {
+    width: 19px; /* Ajustez selon votre besoin */
+    height: 19px;
+    margin-left: 2%;
+  }
 
-.icondev{
-    position: absolute;
-    top: 38%;
-    margin: auto;
-    margin-left: 59%;
-}
-
-.texte3{
-    position: absolute;
-    top: 40.5%;
-    margin: auto;
-    margin-left: 10%;
-    font-family: Lato;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px
-}
-
-.texte4{
-    position: absolute;
-    top: 40.6%;
-    margin: auto;
-    margin-left: 36%;
+  .produit-texte2{
+    margin-left: 5%;
     font-family: Lato;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 22px;
-}
-
-.texte5{
-    position: absolute;
-    top: 43%;
-    margin: auto;
-    margin-left: 10%;
-    font-family: Lato;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px
-}
-
-.texte6{
-    position: absolute;
-    top: 43.1%;
-    margin: auto;
-    margin-left: 36%;
+    line-height: 22px; /* 157.143% */
+  }
+  
+  .produit-texte3{
+    margin-left: 5%;
     font-family: Lato;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 22px;
-}
+    line-height: 22px; /* 157.143% */
+  }
 
-.separation{
-    position: absolute;
-    top: 48%;
-    margin: auto;
-    margin-left: 10%;
-    width: 319.007px;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.15);
-}
-
-.texte7{
-    position: absolute;
-    top: 51%;
-    margin: auto;
-    margin-left: 10%;
+  .produit-texte4{
+    margin-top: 10%;
+    margin-left: 5%;
     font-family: Lato;
-    font-size: 14px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 22px;
-}
+    line-height: 22px; /* 157.143% */
+  }
 
-.prix{
-    position: absolute;
-    top: 50%;
-    margin: auto;
-    margin-left: 65%;
+  .prix{
+    margin-top: 7%;
     color: var(--Fui-Color-Blue-300, #91ACFD);
     font-family: Lato;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: 36px;
-}
+  }
 
-.separation1{
-    position: absolute;
-    top: 59%;
-    margin: auto;
-    margin-left: 10%;
-    width: 319.007px;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.15);
-}
-
-.texte8{
-    position: absolute;
-    top: 56%;
-    margin: auto;
-    margin-left: 28%;
+  .produit-texte5{
+    margin-left: 5%;
+    margin-top: 1%;
     font-family: Lato;
     font-size: 9.697px;
     font-style: normal;
     font-weight: 400;
     line-height: 15.238px;
-}
+  }
 
-.icon1{
-    position: absolute;
-    top: 56%;
-    margin: auto;
-    margin-left: 44%;
-}
+  .ligne1{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+  }
 
-.icon2{
-    position: absolute;
-    top: 56%;
-    margin: auto;
-    margin-left: 48%;
-}
-
-.icon3{
-    position: absolute;
-    top: 56%;
-    margin: auto;
-    margin-left: 52%;
-}
-
-.icon4{
-    position: absolute;
-    top: 56%;
-    margin: auto;
-    margin-left: 56%;
-}
-
-.icon5{
-    position: absolute;
-    top: 56%;
-    margin: auto;
-    margin-left: 60%;
-}
-
-.plus{
-    position: absolute;
-    top: 56.5%;
-    margin: auto;
-    margin-left: 65%;
-    color: #FFF;
-    font-family: Lato;
-    font-size: 12.139px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 19.075px;
-}
-
-.texte9{
+  .produit-separation {
+    margin-left: 5%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.15);
+    margin-top: 20px; /* Un espacement entre les sections */
+  }
+  
+  .produit-prix-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .produit-offres {
+    margin-left: 2%;
+  }
+  
+  .produit-texte6{
+    margin-left: 5%;
     color: var(--Fui-Color-Blue-300, #91ACFD);
-    position: absolute;
-    top: 60%;
-    margin: auto;
-    margin-left: 10%;
     font-family: Lato;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 22px;
-    
-}
+  }
 
-.texte10{
-    position: absolute;
-    top: 60%;
-    margin: auto;
-    margin-left: 37%;
+  .produit-texte7{
+    margin-left: 4%;
     font-family: Lato;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 22px;
-}
+  }
 
-.texte11{
-    position: absolute;
-    top: 60%;
-    margin: auto;
-    margin-left: 54%;
+  .produit-texte8{
+    margin-left: 4%;
     font-family: Lato;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 22px;
-}
+  }
 
-.texte12{
-    position: absolute;
-    top: 60%;
-    margin: auto;
-    margin-left: 65%;
+  .produit-texte9{
+    margin-left: 4%;
     font-family: Lato;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 22px;
-}
+  }
 
-.ligne{
-    position: absolute;
-    top: 63%;
-    margin: auto;
-    margin-left: 10%;
-    width: 92.011px;
-    height: 2px;
-    background: #91ACFD;
-}
-
-.texte13{
-    position: absolute;
-    top: 65%;
-    margin: auto;
-    margin-left: 10%;
+  .produit-texte10{
+    margin-left: 5%;
+    -webkit-text-stroke-width: 0.4000000059604645;
+    -webkit-text-stroke-color: #FFF;
     font-family: Lato;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
-}
+  }
 
-.jeu1{
-    position: absolute;
-    top: 69%;
-    margin: auto;
-    margin-left: 12%;
-}
+  .ligne{
+    margin-left: 5%;
+    width: 92.011px;
+    height: 2px;
+    background: #91ACFD;
+  }
 
-.jeu2{
-    position: absolute;
-    top: 69%;
-    margin: auto;
-    margin-left: 56%;
-}
-
-.texte14{
-    position: absolute;
-    top: 80%;
-    margin: auto;
-    margin-left: 12%;
-    font-family: Lato;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px;
-}
-
-.texte15{
-    width: 157px;
-    position: absolute;
-    top: 83%;
-    margin: auto;
-    margin-left: 12%;
-    font-family: Lato;
-    font-size: 10px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 15px;
-}
-
-.texte16{
-    position: absolute;
-    top: 80%;
-    margin: auto;
-    margin-left: 56%;
-    font-family: Lato;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px;
-}
-
-.texte17{
-    width: 157px;
-    position: absolute;
-    top: 83%;
-    margin: auto;
-    margin-left: 56%;
-    font-family: Lato;
-    font-size: 10px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 15px;
-}
-
-.texte18{
-    position: absolute;
-    top: 92%;
-    margin: auto;
-    margin-left: 10%;
-    font-family: Lato;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 24px;
-    text-transform: uppercase;
-}
+  .produit-jeu {
+    width: 100px; /* Ajustez selon votre besoin */
+    margin: 10px; /* Ajout d'un peu d'espace */
+  }
+  
+  .produit-review {
+    text-align: center; /* Pour centrer le texte */
+  }
+  
+  .produit-temoignages {
+    padding: 10px 0;
+  }
+  
+  .produit-description {
+    padding: 10px 0;
+  }
