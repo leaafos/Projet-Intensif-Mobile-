@@ -40,6 +40,7 @@
   
   .produit-content {
     padding: 20px; /* Ajout d'une marge intérieure pour un espacement agréable */
+    background: var(--Bleu-dgrad, linear-gradient(168deg, #171D25 63.68%, #284BAF 144.2%));
   }
   
   .produit-title-section {
@@ -195,6 +196,13 @@
     background: rgba(255, 255, 255, 0.15);
     margin-top: 20px; /* Un espacement entre les sections */
   }
+
+  .produit-separation1{
+    margin-left: 5%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.15);
+    margin-top: 1%;
+  }
   
   .produit-prix-section {
     display: flex;
@@ -248,12 +256,12 @@
     font-family: Lato;
     font-size: 14px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 24px;
   }
 
   .produit-texte11{
-    margin-left: 8%;
+    margin-left: 5%;
     font-family: Lato;
     font-size: 14px;
     font-style: normal;
@@ -262,6 +270,11 @@
   }
 
   .produit-texte12{
+    width: 50%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column; /* pour garantir que les éléments sont en colonne */
+    align-items: flex-start;
     font-family: Lato;
     font-size: 10px;
     font-style: italic;
@@ -270,7 +283,7 @@
   }
 
   .produit-texte13{
-    margin-left: 10%;
+    margin-left: 19%;
     font-family: Lato;
     font-size: 14px;
     font-style: normal;
@@ -279,11 +292,45 @@
   }
 
   .produit-texte14{
+    width: 50%;
+    margin-left: 6%;
+    display: flex;
+    flex-direction: column; /* pour garantir que les éléments sont en colonne */
+    align-items: flex-start;
     font-family: Lato;
     font-size: 10px;
     font-style: italic;
     font-weight: 400;
     line-height: 15px;
+  }
+
+  .video{
+    display: flex;
+  }
+
+  .produit-texte15{
+    display: flex;
+    flex-direction: column; /* pour garantir que les éléments sont en colonne */
+    align-items: flex-start;
+    margin-left: 5%;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    
+  }
+
+  .produit-texte16{
+    display: flex;
+    flex-direction: column; /* pour garantir que les éléments sont en colonne */
+    align-items: flex-start;
+    margin-left: 5%;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
   }
 
   .ligne{
@@ -294,21 +341,52 @@
   }
 
   .produit-jeu1 {
-    margin-top: 6%;
-    margin-left: 8%;
+    margin-top: 2%;
+    margin-left: 5%;
     width: 157px;
     height: 87.633px;
     flex-shrink: 0;
   }
 
   .produit-jeu2 {
-    margin-top: 6%;
-    margin-left: 2%;
+    margin-top: 2%;
+    margin-left: 5%;
     width: 157px;
     height: 87.633px;
     flex-shrink: 0;
   }
   
   .produit-description {
-    padding: 10px 0;
+    margin-top: 12%;
+  }
+
+  .produit-description1 {
+    margin-top: 8%;
+  }
+
+  .produit-texte17{
+    margin-left: 5%;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  .sous-separation{
+    margin-top: 3%;
+  }
+
+  .sous-separation1{
+    margin-top: 5%;
+  }
+
+  .produit-texte18{
+    margin-left: 5%;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
   }

@@ -15,6 +15,7 @@ import plus from '../assets/plus.png';
 import jeu1 from '../assets/jeu1.png';
 import jeu2 from '../assets/jeu2.png';
 import jeu3 from '../assets/jeu3.png';
+import unleaving from '../assets/unleaving-produit.png';
 
 export default function Produit() {
     return (
@@ -70,31 +71,96 @@ export default function Produit() {
                         <img src={plus}  alt="Plus"/>
                     </div>
                 </div>
-                <div className="produit-separation"></div>
-                <div>
+                <div className="produit-separation1"></div>
+                <div className="sous-separation">
                     <span className="produit-texte6"><b>Description</b></span>
                     <span className="produit-texte7">Galerie</span>
                     <span className="produit-texte8">Prix</span>
                     <span className="produit-texte9">Développeur</span>
                 </div>
                 <div className="ligne"></div>
-                <span className="produit-texte10">ILS PARLENT DE NOUS</span>
+                <div className="sous-separation1">
+                    <span className="produit-texte10">ILS PARLENT DE NOUS</span>
+                </div>
                 <div className="produit-review">
                     <img src={jeu1} alt="Jeu 1" className="produit-jeu1" />
                     <img src={jeu2} alt="Jeu 2" className="produit-jeu2" />
                 </div>
 
-                <div>
+                <div className="video">
                     <span className="produit-texte11">@2santos.amelya</span>
-                    <span className="produit-texte12">“Une exploration des recoins obscurs de l'esprit humain à travers des énigmes stimulantes.”</span>
                     <span className="produit-texte13">@talmo.primesupreme</span>
-                    <span className="produit-texte14">“Un monde surréaliste rendu vivant par des œuvres d'art peintes à la main.”</span>
                 </div>
+                <div className="video">
+                    <span className="produit-texte12">“Une exploration des recoins obscurs de l'esprit humain à travers des énigmes stimulantes.”</span>
+                    <span className="produit-texte14">“Un monde surréaliste rendu vivant par des œuvres d'art peintes à la main.”</span>
 
+                </div>
                 <div className="produit-description">
-                    <span className="produit-texte">
-                        UNLEAVING est un jeu de plateforme captivant. Les énigmes et les défis basés sur les compétences sont étroitement intégrés dans la trame de l'histoire, permettant une expérience immersive. UNLEAVING est un jeu de plateforme captivant. Les énigmes et les défis basés sur les compétences sont étroitement intégrés dans la trame de l'histoire, permettant une expérience immersive.
+                    <span className="produit-texte15">
+                        UNLEAVING est un jeu de plateforme et de réflexion captivant, doté d'un monde surréaliste rendu vivant par des œuvres d'art peintes à la main et des animations de peinture uniques. 
                     </span>
+                </div>
+                <div>
+                    <span className="produit-texte16">
+                         Les énigmes du jeu et les défis basés sur les compétences sont étroitement intégrés dans la trame de l'histoire, permettant une expérience immersive.
+                    </span>
+                </div>
+                <div className="produit-description1">
+                    <span className="produit-texte16">
+                        Qui es-tu ? 
+                    </span>
+                </div>
+                <div>
+                    <span className="produit-texte16">
+                        Que fais-tu ici ? 
+                    </span>
+                </div>
+                <div>
+                    <span className="produit-texte16">
+                        Tu es perdu.  
+                    </span>
+                </div>
+                <div>
+                    <span className="produit-texte16">
+                        Pourtant, tu es chez toi.   
+                    </span>
+                </div>
+                <div>
+                    <span className="produit-texte16">
+                        Ne vacille pas.   
+                    </span>
+                </div>
+                <div>
+                    <span className="produit-texte16">
+                        Car tu es revenu.   
+                    </span>
+                </div>
+                <div className="produit-description1">
+                    <span className="produit-texte16">
+                        Quand tout semble désespéré, un enfant est réveillé par les chuchotements de la dernière feuille, attiré dans un monde imaginaire. Unleaving invite le joueur dans un jeu de plateforme et de réflexion axé sur la narration, où chaque défi se déroule dans un paysage peint à la main, explorant les métaphores et les frontières insaisissables de la perception et du sens.
+                    </span>
+                </div>
+                <div className="produit-description1">
+                    <span className="produit-texte17">EXPERIENCE ARTISTIQUE</span>
+                </div>
+                <div>
+                    <span className="produit-texte16">
+                        Unleaving est autant un jeu vidéo qu'une série étendue de peintures et de dessins multimédias. Chaque image est une peinture à la main, intégrant parfaitement des éléments de casse-tête en crayon et en graphite. Les visuels prennent vie grâce à une animation de peinture traditionnelle. S'engageant à l'originalité, chaque scène est nouvelle, sans répétition. Chaque chapitre est basé sur un thème spécifique qui guide l'ambiance, l'émotion et l'histoire, et influence par extension les couleurs et le style.
+                    </span>
+                </div>
+                <div className="produit-description1">
+                    <span className="produit-texte16">
+                        À travers le gameplay comprenant des énigmes et des défis basés sur les compétences, étroitement intégrés dans la trame de l'histoire, les joueurs sont invités à s'immerger dans cette expérience émotionnelle.
+                    </span>
+                </div>
+                <div className="produit-description1">
+                    <span className="produit-texte18">Galerie</span>
+                </div>
+                <div>
+                    <video width="50%" controls>
+                        <source src="/assets/unleaving-video.mp4" type="video/mp4"/>
+                    </video>
                 </div>
             </div>
         </div>
