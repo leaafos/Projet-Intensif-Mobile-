@@ -390,3 +390,94 @@
     font-weight: 400;
     line-height: 22px;
   }
+
+  .liste-photo{
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .produit-texte19{
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  .bouton{
+    margin-top: 10%;
+    width: 56%;
+    margin-left: 5%;
+    border-radius: 7px;
+    background: var(--Fui-Color-Blue-300, #91ACFD);
+    display: inline-flex;
+    padding: 10px 68px 8px 68px;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+  }
+
+  .produit-texte20{
+    margin-left: 5%;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .texte1{
+    margin-top: 8%;
+  }
+
+  .texte2{
+    margin-top: 3%;
+  }
+
+  .bloc-prix{
+    margin-top: 2%;
+    margin-left: 20%;
+    display: inline-flex;
+    height: var(--Fui-Control-Height-lg, 44px);
+    min-width: 44px;
+    min-height: var(--Fui-Control-Height-lg, 44px);
+    max-height: var(--Fui-Control-Height-lg, 44px);
+    padding: 0px var(--Fui-Space-xlg, 16px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--Fui-Space-sm, 6px);
+    flex-shrink: 0;
+    border-radius: var(--Fui-Radius-lg, 8px);
+    background: #91ACFD;
+  }
+
+  .prix2{
+    font-family: Lato;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 33px;
+  }
+
+  .produit-texte21{
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+  }
+
+  .produit-texte22{
+    color: var(--Fui-Color-Blue-300, #91ACFD);
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .ligne2{
+    margin-left: 5%;
+    display: flex;
+  }

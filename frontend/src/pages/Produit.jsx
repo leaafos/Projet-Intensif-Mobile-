@@ -14,8 +14,12 @@ import icon5 from '../assets/icon5.png';
 import plus from '../assets/plus.png';
 import jeu1 from '../assets/jeu1.png';
 import jeu2 from '../assets/jeu2.png';
-import jeu3 from '../assets/jeu3.png';
-import unleaving from '../assets/unleaving-produit.png';
+import unleaving1 from '../assets/unleaving1.png';
+import unleaving2 from '../assets/unleaving2.png';
+import unleaving3 from '../assets/unleaving3.png';
+import unleaving4 from '../assets/unleaving4.png';
+import iconAlerte from '../assets/iconAlerte.svg';
+import shopping from '../assets/shopping.svg';
 
 export default function Produit() {
     return (
@@ -159,9 +163,35 @@ export default function Produit() {
                 </div>
                 <div>
                     <video width="50%" controls>
-                        <source src="/assets/unleaving-video.mp4" type="video/mp4"/>
+                        <source src="/video/unleaving-video.mp4" type="video/mp4"/>
                     </video>
                 </div>
+                <div className="liste-photo">
+                    <img src={unleaving1}></img>
+                    <img src={unleaving2}></img>
+                    <img src={unleaving3}></img>
+                    <img src={unleaving4}></img>
+                </div>
+                <div className="bouton">
+                    <img src={iconAlerte}></img>
+                    <span className="produit-texte19">Mettre une alerte de prix</span>
+                </div>
+                <div className="texte1">
+                    <span className="produit-texte20">Prix neuf</span>
+                </div>
+                <div className="ligne2">
+                    <div className="texte2">
+                        <span className="produit-texte21">Dream Harvest</span>
+                    <div>
+                        <span className="produit-texte22">Développeur indé</span>
+                    </div>
+                    </div>
+                    <div className="bloc-prix">
+                        <span className="prix2">16,78€</span>
+                        <img src={shopping}></img>
+                     </div>
+                </div>
+                
             </div>
         </div>
     );
