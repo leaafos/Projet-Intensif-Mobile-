@@ -16,12 +16,10 @@ export default function Overlay() {
            
            <img src={Check}></img>
 
-          <div className="bouton">
             <Link to="/">
                <button >Menu</button>
             </Link>
            
-          </div>
           
         </div>
       </div>

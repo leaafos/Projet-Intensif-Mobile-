@@ -1,4 +1,3 @@
-
 body{
   margin: 0;
   padding: 0;
@@ -7,18 +6,31 @@ body{
 }
   
   .title {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
+  }
+
+  .title5 {
+    margin-top: -10px;
+    font-size: -90px;
+  }
+
+  .title6 {
+    margin-top: -10px;
+  }
+
+  .title7 {
+    margin-top: -10px;
   }
   
   .title h2 {
     font-size: 110%; 
     margin-bottom: 10px; 
-    margin-top: 5%;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
+    margin-left: 5px;
 
   }
-  
   .recommendations p {
     font-size: 10px; 
     margin-top: 10%; 
@@ -112,16 +124,66 @@ body{
     overflow-x: scroll;
   }
   
-  .square {
-    min-width: 27%;
-    max-width: 27%;
-    min-height: 117px;
-    max-height: 117px;
+  .square1 {
+    width: 10px;
+    height: 117px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 58px;
+  }
+
+  .ripout {
+    width: 90px;
+    height: 117px;
+  }
+  .killer{
+    width: -100px;
+  }
+  .square2 {
+    width: 20px;
+    height: 117px;
+    margin-left: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
+  .square3 {
+    width: 20px;
+    height: 117px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 145px;
+  }
+  .square4 {
+    width: 10px;
+    height: 117px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -55px;
+  }
+
+  .square7 {
+    margin-left: -25px;
+  }
+  .square8 {
+    margin-left: -25px;
+  }
+
+  .square2{
+    margin-left: 60px;
+  }
+  
+  .square13{
+    margin-left: 20px;
+  }
+
 
   .blockInner{
     height: 60%;
@@ -179,10 +241,28 @@ body{
   color: orange;
 }
 
+.texte{
+  width: 160px; /* Définissez la largeur du bouton */
+  height: 40px;
+  font-size: 13px;
+  margin-left: 170px;
+  margin-top: -15px;
+}
+
+.texte2{
+  width: 120px; /* Définissez la largeur du bouton */
+  height: 40px;
+  font-size: 13px;
+  margin-left: 220px;
+  margin-top: -40px;
+  color: aliceblue;
+  align-items: center;
+}
+
 .gauche{
   margin-left: 200px;
   background-color: orange;
-  width: 160px; /* Définissez la largeur du bouton */
+  width: 120px; /* Définissez la largeur du bouton */
   height: 40px;
   font-size: 13px;
 }
@@ -211,4 +291,96 @@ body{
   font-size: 110%; 
   margin-bottom: 10px; 
   margin-top: 5%;
+}
+.photos-container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.image-pair1 {
+  display: flex;
+  margin-top: 10px; /* Ajustez la marge supérieure */
+  margin-top: 20px;
+  width: 80px; 
+  height: 200px;
+}
+
+.image-pair2 {
+  display: flex;
+  margin-top: -190px;
+  margin-left: 180px;
+}
+
+
+.image-pair1 img {
+  width: 10px; 
+  height: auto;
+  margin-left: 20px;
+  border-radius: 15px; 
+  margin-right: 15px;
+  margin-top: -20px; /* Ajustez la marge supérieure */
+}
+.image-pair2 img {
+  width: 150px; 
+  height: auto;
+  margin-left: 10px;
+  border-radius: 15px; 
+  margin-right: 15px;
+  margin-top: -20px; /* Ajustez la marge supérieure */
+}
+
+.image-pair1 img.image-1 {
+  width: 120px;
+  height: 120px;;
+  margin-top: 40px; /* Ajustez la marge supérieure */
+}
+
+.image-pair2 img.image-2 {
+  width: 130px;
+  height: 175px;
+  margin-top: 10px; /* Ajustez la marge supérieure */
+  margin-left: -100px;
+}
+
+.profil-container2 {
+  display: flex;
+  margin-top: -5px; 
+  margin-left: -160px; 
+}
+
+
+.profil-container2 span {
+  font-size: 14px; 
+  margin-top: -700px; 
+  margin-left: 100px; 
+}
+
+.profil-container1 {
+  display: flex;
+}
+
+.profil-container1 span {
+  font-size: 14px; 
+  margin-top: 5px; 
+  margin-left: 50px; 
+}
+
+.amelya {
+  width: 100%;
+}
+
+.amelya img {
+  width:100%;
+}
+
+.header-amelya {
+  height: 20%;
+}
+
+.to-swipe {
+  margin-top: -1000px;
+  border: 1px solid red;
+  height: 80px;
 }

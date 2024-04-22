@@ -34,6 +34,8 @@ import A from '../assets/A.png'
 import C from '../assets/C.png'
 import N from '../assets/N.png'
 import unleavingphoto from '../assets/unleavingphoto.png';
+import { Link } from 'react-router-dom';
+
 
 export default function Produit() {
     return (
@@ -361,10 +363,12 @@ export default function Produit() {
                             </div>
                         </div>
                     </div>
-                    <div className="prixorange">
-                        <span className="titreprix">6,50€</span>
-                        <img src={shopping}></img>
-                    </div>
+                    <Link to="/annonces">
+                        <div className="prixorange">
+                            <span className="titreprix">6,50€</span>
+                            <img src={shopping}></img>
+                        </div>
+                    </Link>
                 </div>
                 <div className="dev1">
                     <div className="devkin">

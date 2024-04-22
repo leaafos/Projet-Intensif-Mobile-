@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/produit2.css';
+import { Link } from 'react-router-dom';
 import Logo from '../assets/LOGO.svg';
 import narratif from '../assets/narratif.svg';
 import aventure from '../assets/aventure.svg';
@@ -35,12 +36,16 @@ import C from '../assets/C.png'
 import N from '../assets/N.png'
 import neuronetphoto from '../assets/neuronetphoto.png';
 
+
 export default function Produit() {
     return (
         <div className="produit-container">
-            <div className="produit-header">
-                <img src={Logo} alt="Logo" className="produit-logo" />
-            </div>
+            <Link to="/alan">
+                <div className="produit-header">
+                   <img src={Logo} alt="Logo" className="produit-logo" />
+                 </div>
+            </Link>
+            
             <div className="produit-content">
                 <div className="produit-title-section">
                     <h4 className="produit-titreJeu">NeuroNet</h4>
@@ -191,10 +196,13 @@ export default function Produit() {
                     <img src={neuronet3}></img>
                     <img src={neuronet4}></img>
                 </div>
-                <div className="bouton">
-                    <img src={iconAlerte}></img>
-                    <span className="produit-texte19">Mettre une alerte de prix</span>
-                </div>
+                <Link to="/connexion">
+                    <div className="bouton">
+                        <img src={iconAlerte}></img>
+                        <span className="produit-texte19">Mettre une alerte de prix</span>
+                    </div>
+                </Link>
+                
                 <div className="texte1">
                     <span className="produit-texte20">Prix neuf</span>
                 </div>
@@ -202,7 +210,7 @@ export default function Produit() {
                     <div className="texte2">
                         <span className="produit-texte21">Dream Harvest</span>
                     <div>
-                        <span className="produit-texte22">Développeur indé</span>
+                        <span className="produit-texte228">Développeur indé</span>
                     </div>
                     </div>
                     <div className="bloc-prix">

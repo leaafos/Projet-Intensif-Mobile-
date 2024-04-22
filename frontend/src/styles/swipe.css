@@ -39,7 +39,7 @@
 
 .card-content-back {
     margin-left: 29px;
-    margin-top: 22px;
+    margin-top: 90px;
     transform: rotateY(180deg);
 }
 
@@ -49,7 +49,7 @@
     position: absolute;
     max-width: 300px;
     height: 700px;
-    top: 12%;
+    top: 15%;
     left: 7%;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -57,6 +57,7 @@
 
 .card2-content-front, .card2-content-back {
     transform: scale(1.08);
+    margin-top: 80px;
     height: 60%;
     position: absolute;
     backface-visibility: hidden;
@@ -69,6 +70,7 @@
 }
 
 .card2-content-back {
+    margin-top: 100px;
     height: 100%;
     margin-left: 29px;
     transform: rotateY(180deg);
@@ -97,6 +99,7 @@
 .card3-content-front, .card3-content-back {
     height: 60%;
     position: absolute;
+    margin-top: 80px;
     backface-visibility: hidden;
     transition: transform 0.6s;
 }
@@ -124,7 +127,8 @@
 .fourth-card img{
     height: 60%;
     margin-left: 30px;
-    transform: scale(1.06);
+    margin-top: 100px;
+    transform: scale(1.08);
 }
 
 /*boutons*/

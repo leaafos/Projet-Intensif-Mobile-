@@ -216,14 +216,8 @@ NOTIF ET MESSSAGE
     height: 60px;
     background-color: #171D25;
     font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.menu-content .bouton-messages img {
-    margin-right: 10px;
-}
 
 .circle {
     width: 70px; 
@@ -722,14 +716,11 @@ NOTIF ET MESSSAGE
     align-items: center;
 }
 
-.menu-content .bouton-messages img {
-    margin-right: 110px;
-}
-
 .circle {
     width: 70px; 
     height: 70px; 
     border-radius: 50%;
     background-color: black;
     margin-top: 10%; 
+    margin-left: 50px;
 }

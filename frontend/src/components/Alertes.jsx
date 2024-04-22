@@ -25,11 +25,6 @@ function Alertes(){
 
     return (
         <div className='root'>
-            {!showForm && !alertCreated &&(
-                <button className="bouton-alerte" onClick={() => setShowForm(true)}>
-                    <img src={AlerteIcon}></img><p>Mettre une alerte de prix</p></button>
-            )}
-            {showForm && (
                 <div className='overlay-alertes'>
                     <div className='formulaire-fond'>
                         <div className='form-container'>
@@ -99,16 +94,18 @@ function Alertes(){
                                         <option value="5 an">5 ans</option>
                                     </select>
                                </div>
-                               <div className='submit'>
-                                    <button  type="submit">Créer l'alerte</button>
-                                </div> 
+                               <Link to="/produit2">
+                                    <div className='submit'>
+                                        <button  type="submit">Créer l'alerte</button>
+                                    </div> 
+                               </Link>
+                               
                             </form>
                         </div>
                     </div>
                 </div>
-            )}
 
-            {/*Afficher l'alerte en overlay*/}
+            {/*Afficher l'alerte en overlay}
             {alertCreated &&(
                 <div className='overlay-completed'>
                     <div className='alerte-créée'>
@@ -127,7 +124,7 @@ function Alertes(){
                     </div>
                     
                 </div>
-            )}
+            )*/}
         </div>
     )
 

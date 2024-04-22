@@ -83,9 +83,9 @@ export default function Inscription() {
                         <img src={google}></img>
                         <img src={steam}></img>
                     </div>
-
-                    <button type='submit' className='soumettre'>S'inscrire</button>
-
+                    <Link to="/alertes">
+                        <button type='submit' className='soumettre'>S'inscrire</button>
+                    </Link>
                     <div className='inscription'>
                         <p>Dejà un compte ? </p>
                         <Link to="/connexion">

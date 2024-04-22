@@ -12,6 +12,7 @@ import Card2Back from '../assets/card2-back.png';
 import Card3 from '../assets/card3.png';
 import Card3Back from '../assets/card3-back.png';
 import Card4 from '../assets/Card4.png';
+import { Link } from 'react-router-dom';
 
 
 const Swipe= () => {
@@ -49,9 +50,10 @@ const Swipe= () => {
     <div className='page'>
 
         <div className='header-card'>
-            <img src={Logo}></img>  
-            <BurgerMenu></BurgerMenu>
-
+            <Link to="/postSwipe">
+                <img src={Logo}></img>  
+                <BurgerMenu></BurgerMenu>
+            </Link>
 
         </div>
             <div className={`card ${isFlipped ? 'flipped' : ''} ${isExiting ? 'exitLeft' : ''}`} >
@@ -94,9 +96,11 @@ const Swipe= () => {
             <button className='croix-rouge'onClick={handlePoubelleClick}>
                 <img src={CroixRouge}></img>
             </button>
-            <button className='refresh'>
+            <Link to="/produit">
+                <button className='refresh'>
                 <img src={Refresh}></img>
-            </button>
+             </button>
+            </Link>
             <button className='enregistrer' onClick={handleEnregistrerClick}>
                 <img src={Enregistrer}></img>
             </button>

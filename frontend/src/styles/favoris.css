@@ -1,23 +1,106 @@
 .favoris-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Aligner les éléments horizontalement à gauche */
+    align-items: flex-end;
+    overflow-y: auto; 
 }
 
 .favoris-container img {
-    margin-top: 90px; /* Déplace l'image d'enregistrement vers le bas */
-    margin-left: 190px; /* Déplace l'image d'enregistrement vers la droite autant que possible */
+    margin-top: 90px; 
+    margin-left: 190px; 
 }
 
-.titre3 {
-    position: absolute; /* Positionnement absolu par rapport au conteneur parent */
-    top: 90px; /* Ajustez la valeur de top selon vos besoins */
-    margin-left: 135px
+.Home1 {
+  position: absolute;
+  width: 100%; 
+  margin-top: 80px; 
+  margin-left: 130px; 
 }
 
-.titre4{
-    position: absolute; /* Positionnement absolu par rapport au conteneur parent */
-    top: 190px; /* Ajustez la valeur de top selon vos besoins */
-    margin-left: 10px
+.Home2{
+    position: absolute; 
+    margin-top: -110px; 
+    margin-left: 10px;
+    font-size: 20px;
 }
 
+
+.photos-container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -50px;
+}
+
+.image-pair1 {
+  display: flex;
+}
+
+.image-pair1 img {
+  width: 90px; 
+  height: auto;
+  margin-left: 20px;
+  border-radius: 15px; 
+  margin-right: 15px;
+}
+
+.image-pair1 img.image-1 {
+  width: 175px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.image-pair1 img.image-2 {
+  width: 130px;
+  height: 175px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.background3 {
+    position: fixed;
+    top: -90px;
+    left: -200px;
+    width: 700px;
+    height: 500px;
+    opacity: 0.5;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+  
+.background3 img {
+    width: 58%;
+    transition: transform 0.3s ease;
+}
+
+.page2{
+    top: 260px; 
+    height: 2000px;
+    margin-top: 400px;
+}
+
+.enregistrement{
+    position: absolute; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    overflow-y: auto;
+}
+ 
+
+.jeux {
+    display: flex;
+    flex-direction: column;
+}
+
+.jeux img {
+    margin-right: 10px; 
+    margin-bottom: -80px; 
+
+}
+
+.profil-container {
+    display: flex;
+}

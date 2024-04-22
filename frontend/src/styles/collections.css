@@ -1,0 +1,164 @@
+.collections-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    overflow-y: auto;
+    margin-top: 10px; 
+    width: 100%;
+}
+
+.collections-container img {
+    margin-top: 90px; 
+    margin-left: 190px; 
+}
+
+.titre3 {
+    position: fixed; 
+    top: 120px; 
+    margin-left: 115px;
+    font-size: -100px;
+
+}
+
+.titre4{
+    position: absolute; 
+    top: 290px; 
+    margin-left: 10px;
+    font-size: 20px;
+    scroll-margin-top: 100px; 
+    scroll-padding-top: 100px; 
+}
+
+
+.photos-container {
+  display: absolute;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -435px;
+}
+
+.image-pair {
+  display: flex;
+}
+
+.image-pair img {
+  display: absolute;
+  width: 90px; 
+  height: auto;
+  margin-left: 20px;
+  border-radius: 15px; 
+  margin-right: 15px;
+}
+
+.image-pair img.image-1 {
+  width: 175px;
+  height: auto;
+  margin-top: 240px;
+}
+
+.image-pair img.image-2 {
+  width: 150px;
+  height: 175px;
+  margin-top: 240px;
+}
+
+.image-pair img.image-3 {
+  width: 180px;
+  height: auto;
+  margin-top: 25px;
+}
+
+.image-pair img.image-4 {
+  width: 140px;
+  height: auto;
+  margin-top: 25px;
+}
+
+.image-pair img.image-5 {
+    width: 175px;
+    height: 175px;
+    margin-top: 30px;
+}
+
+.background3 {
+    position: fixed;
+    top: -90px;
+    left: -200px;
+    width: 700px;
+    height: 500px;
+    opacity: 0.5;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .background3 img {
+    width: 58%;
+    transition: transform 0.3s ease;
+  }
+
+  .page2{
+    margin-top: 400px; 
+    height: 2000px;
+    width: 100%;
+  }
+
+  .cartons{
+    position: absolute; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    overflow-y: auto;
+    margin-left: 190px; 
+  }
+ 
+
+.jeux {
+    display: flex;
+    flex-direction: column;
+}
+
+.jeux img {
+    margin-right: 10px; 
+    margin-bottom: -80px; 
+
+}
+
+.profil-container {
+    display: flex;
+    margin-top: 100px;
+}
+
+.profil-container img {
+    width: 50px; 
+    height: 50px;
+    object-fit: cover; 
+    margin-right: 10px; 
+    margin-top: -10px;
+}
+
+.profil-container span {
+    font-size: 14px; 
+    margin-left: -10px; 
+    text-decoration: underline;
+}
+
+.new-photos {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+.new-photos img {
+    display: flex;
+    width: 40px; 
+    height: auto;
+    margin: 0 10px; 
+    margin-top: -20px;
+    margin-right: 5px;
+}
+
+.new-photos img:first-child {
+    margin-right: -29px; 
+}
